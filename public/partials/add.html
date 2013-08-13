@@ -1,21 +1,4 @@
-<div>
-	<label for="video-width-input">
-		Video Width</label>
-	<input type="text" id="video-width-input" ng-model="width" value="320">
-	<label for="video-height-input">
-		Video Height</label>
-	<input type="text" id="video-height-input" ng-model="height" value="240">
-	<br />
-	<video id="video" src="{{ src }}"autoplay loop controls muted></video>
-	<h2 id="video-url-preview">
-		<a ng-href="{{ url }}" target="_blank">Recorded Gif URL</a>
-	</h2>
-	<br />
-	<br />
-	<h2>
-		Record video as animated GIF image:</h2>
-	<button ng-click="recordGif()" id="record-gif" class="btn btn-success {{ recorddisabled }}" ng-disabled="{{ recordGIFdisabled }}">
-		Record GIF</button>
-	<button ng-click="stopRecordingGif()" id="stop-recording-gif" class="btn btn-danger {{ stopdisabled }}" ng-disabled="{{ stopRecordingGIFdisabled }}">
-		Stop Recording GIF</button>
-</div>
+<video id="video"></video>
+<button id="startbutton">Take photo</button>
+<canvas id="canvas"></canvas>
+<img src="http://placekitten.com/g/200/150" id="photo" alt="photo">
