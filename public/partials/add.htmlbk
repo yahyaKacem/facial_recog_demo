@@ -1,0 +1,33 @@
+<div class="row-fluid">
+  <div class="span12">
+  <h2>Add Customer - {{blah}}</h2>
+    <div class="row-fluid">
+      <div class="span6">
+        <p class="lead text-left">
+          With the customer's permission, a picture is taken with the device camera.
+          This will allow the application to 'learn' who the user is.
+          When <b>Add</b> is clicked, the image will be
+          uploaded to a database and used for comparison
+          the next time the customer tries to login.
+        </p>
+      </div>
+      <div class="span6" ng-hide>
+        <p class="text-left">Here is the input from the camera:</p>
+	      <div ng-repeat=”stream in streams”>
+	      <video ng-src=stream id="video" autoplay loop controls muted></video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="span12">
+    <div class="row-fluid">
+      <div class="span6">
+        <button ng-click="{{add()}}" class="btn btn-primary" value="Add"/>
+      </div>
+      <div class="span6">
+        <img src="{{video.url}}">
+      </div>
+    </div>
+  </div>
+</div>
+

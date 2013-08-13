@@ -2,44 +2,70 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
-  controller('AddCtrl', [function ($scope) {
+/*function AddCtrl($scope) {
+	$scope.name = "Julia Jacobs";
+}*/
 
-    $scope.add-customer.blah = 'blah';
-		/* Capture image from device camera and store to ../../camera-images */
-		$scope.add-customer.add = function () {
+function AddCtrl($scope) {
+	$scope.recordGIFdisabled = false;
+	$scope.stopRecordingGIFdisabled = true;
+	$scope.width = 320;
+	$scope.height = 240;
+	$scope.recorddisabled = '';
+	$scope.stopdisabled = 'disabled';
 
-			var videoConstraints = {
-				audio: false,
-				video: {
-					mandatory: { },
-					optional: []
-				}
-			}, recorder;
+	navigator.getMedia = ( navigator.getUserMedia ||
+		navigator.webkitGetUserMedia ||
+		navigator.mozGetUserMedia ||
+		navigator.msGetUserMedia);
 
-			navigator.getUserMedia(videoConstraints, function (stream) {
-				$scope.add-customer.video.src = URL.createObjectURL(stream);
 
-				recorder = window.RecordRTC(stream, {
-					type: 'gif',
-					width: 320,
-					height: 240
-				});
-				recorder.startRecording();
+	var videoConstraints = {
+		audio: false,
+		video: {
+		mandatory: { },
+			optional: []
+		}
+	};
 
-				recorder.stopRecording(function (url) {
-					$scope.camera_image_url = url;
-				});
+	var recorder;
+	$scope.recordGif = function() {
+		recordVideoOrGIF();
+	};
 
-				recorder.save();
+	function recordVideoOrGIF() {
+		navigator.getMedia(videoConstraints, function(stream) {
+			$scope.src = URL.createObjectURL(stream);
 
-			}, function () {
-				alert('Webcam access is denied.');
+			recorder = window.RecordRTC(stream, {
+				type: 'gif',
+				width: $scope.width,
+				height: $scope.height
 			});
+			recorder.startRecording();
+		}, function() {
+			alert('Webcam access is denied.');
+		});
 
-		};
-	}])
+		$scope.recordGIFdisabled = true;
+		$scope.stopRecordingGIFdisabled = false;
+		$scope.recorddisabled = 'disabled';
+		$scope.stopdisabled = '';
+	}
 
-  .controller('RecognizeCtrl', [function($scope) {
+	$scope.stopRecordingGif = function() {
+		$scope.recordGIFdisabled = false;
 
-  }])
+		if (recorder)
+			recorder.stopRecording(function(url) {
+				$scope.url = url;
+			});
+			// force saving recorded stream to disk
+			recorder.save();
+	};
+
+}
+
+function RecognizeCtrl($scope) {
+	$scope.name = "Julia Jacobs";
+}

@@ -35,4 +35,4 @@ app.get('/*', routes.index);
 
 // Start server
 app.listen(port);
-console.log('me server, me start on port ' + port + ' in ' + process.env.NODE_ENV + 'environment.');
+console.log('me server, me start on port ' + port + ' in ' + process.env.NODE_ENV + ' environment.');
