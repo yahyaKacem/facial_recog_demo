@@ -23,7 +23,6 @@ app.directive("webrtcvideo", function(){
 		restrict: "A",
 		controller: function($scope){
 			this.height = 0;
-			this.width = 200;
 			this.takepicture = false;
 		},
 		link: ($scope, $element, $attributes, startbuttonController, controller) {
@@ -51,11 +50,9 @@ app.directive("webrtcvideo", function(){
 			);
 
 			$element.bind('canplay', function(event){
-				var height;
 				if (!streaming) {
-					height = $element.videoHeight / ($element.videoWidth/200);
 					$element.setAttribute('width', 200);
-					$element.setAttribute('height', height);
+					$element.setAttribute('height', controller.height);
 					streaming = true;
 				}
 			});
@@ -71,12 +68,11 @@ app.directive("camerapicture", function(){
 			 this.data = null;
 		},
 		link: function($scope, $element, $attributes, webrtcvideoController, controller){
-			var width = webrtcvideoController.width,
-				height = webrtcvideoController.height;
-			$element.width = width;
+			var height = webrtcvideoController.height;
+			$element.width = 200;
 			$element.height = height;
 			if (webrtcvideoController.takepicture) {
-				$element.getContext('2d').drawImage(video, 0, 0, width, height);
+				$element.getContext('2d').drawImage(video, 0, 0, 200, height);
 				controller.data = $element.toDataURL('image/png');
 			}
 		}
