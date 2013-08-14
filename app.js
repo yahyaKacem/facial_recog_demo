@@ -6,12 +6,15 @@
 var express = require("express"),
     app     = express(),
     routes = require('./routes'),
+		camera = require('./routes/camera'),
     port    = parseInt(process.env.PORT, 10) || 5000;
 
 
 // Configuration
 
 app.configure(function(){
+	app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
+	app.use(express.logger('dev'));
   app.use(express.methodOverride());
   app.use(express.bodyParser());
   app.use(express.static(__dirname + '/public'));
@@ -31,6 +34,7 @@ app.configure('production', function(){
 });
 
 // Routes
+app.post('/camera/:username', camera.saveImage);
 app.get('/*', routes.index);
 
 // Start server

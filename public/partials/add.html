@@ -1,4 +1,31 @@
-<video web-video></video>
-<button start-button>Take photo</button>
-<canvas camera-picture></canvas>
-<img src="http://placekitten.com/g/200/150" photo>
+<ol>
+	<li class="ng-scope">
+		<span>Click 'allow' button above to give demo access to your camera.</span>
+	</li>
+	<li class="demos ng-scope" ng-show="showDemos" style="">
+		<span>Enter a name to associate with your picture.</span>
+		<br>
+		<input type="text" ng-model="name" placeholder="Type name…" required>
+	</li>
+	<li class="demos ng-scope" ng-show="showDemos" style="">
+		<span>Look straight into the camera like Barak Obama's picture.</span>
+		<br>
+		<img src="../img/barak.png" style="max-width: none;">
+		<br>
+		<webcam on-stream="onStream(stream,video)"
+		        on-access-denied="onError(err)"
+		        on-streaming="onSuccess(video)"
+		        placeholder="'img/ajax-loader.gif'">
+		</webcam>
+		<br>
+		<button class="btn btn-large btn-primary" ng-click="makeSnapshot()">Take picture!</button>
+	</li>
+	<li class="demos ng-scope" ng-show="showSnapShot" style="">
+		<span>Review snapshot.</span>
+		<br>
+		<canvas id="snapshot"></canvas>
+		<br>
+		<button type="button" class="btn btn-large" ng-click="redo()">Take again</button>
+		<button type="button" class="btn btn-large btn-primary" ng-click="sendImg()">Continue</button>
+	</li>
+</ol>

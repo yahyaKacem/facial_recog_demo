@@ -13,6 +13,7 @@
     <orderEntry type="library" name="jQuery" level="project" />
     <orderEntry type="library" name="lodash.js" level="project" />
     <orderEntry type="library" name="angular.js" level="project" />
+    <orderEntry type="library" name="angular webcam directive" level="project" />
   </component>
 </module>
 

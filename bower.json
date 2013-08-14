@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "angular": "*",
+	  "angular-ui-router": "*",
     "jquery": "*",
     "lodash": "~1.2.0",
     "restangular": "*",

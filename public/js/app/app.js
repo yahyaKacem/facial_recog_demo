@@ -1,10 +1,12 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', ['restangular', 'myApp.filters', 'myApp.services', 'myApp.directives']).
-  config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+angular.module('myApp', ['restangular', 'webcam', 'ui.state', 'myApp.filters', 'myApp.services', 'myApp.directives']).
+  config(['$routeProvider', '$urlRouterProvider', '$locationProvider', function($routeProvider, $urlRouterProvider, $locationProvider) {
+		// For any unmatched url, send to /
+		$urlRouterProvider.otherwise("/")
+
     $routeProvider.when('/', {templateUrl: 'partials/add.html', controller: 'AddCtrl'});
     $routeProvider.when('/recognize', {templateUrl: 'partials/recognize.html', controller: 'RecognizeCtrl'});
-    $routeProvider.otherwise({redirectTo: '/'});
     $locationProvider.html5Mode(true);
   }]);
