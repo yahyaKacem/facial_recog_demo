@@ -3,32 +3,26 @@
 /* Directives */
 var app = angular.module('myApp.directives', []);
 
-app.directive("startbutton", function(){
+app.directive("startButton", function(){
 	return {
 		restrict: "A",
-		controller: function($scope){
-			this.takepicture = false;
-		},
-		link: ($scope, $element, $attributes, controller) {
-			$element.bind('click', function(event){
-				controller.takepicture = true;
+		scope: true,
+		link: function($scope, $element) {
+			$scope.takepicture = false;
+			$element.bind('click', function(){
+				$scope.takepicture = true;
 			});
 		}
 	};
 });
 
-app.directive("webrtcvideo", function(){
+app.directive("webVideo", function(){
 	return {
-		require: 'startbutton',
 		restrict: "A",
-		controller: function($scope){
-			this.height = 0;
-			this.takepicture = false;
-		},
-		link: ($scope, $element, $attributes, startbuttonController, controller) {
-			controller.height = $element.videoHeight / ($element.videoWidth/200);
-
-			controller.takepicture = startbuttonController.takepicture;
+		scope: true,
+		link: function($scope, $element) {
+			var streaming;
+			$scope.height = $element.videoHeight / ($element.videoWidth/200);
 
 			navigator.getMedia(
 				{
@@ -49,10 +43,10 @@ app.directive("webrtcvideo", function(){
 				}
 			);
 
-			$element.bind('canplay', function(event){
+			$element.bind('canPlay', function(){
 				if (!streaming) {
-					$element.setAttribute('width', 200);
-					$element.setAttribute('height', controller.height);
+					$element.setAttribute('width', '200');
+					$element.setAttribute('height', $scope.height);
 					streaming = true;
 				}
 			});
@@ -62,18 +56,15 @@ app.directive("webrtcvideo", function(){
 
 app.directive("camerapicture", function(){
 	return {
-		require: 'webrtcvideo',
+		scope: true,
 		restrict: "A",
-		controller: function($scope){
-			 this.data = null;
-		},
-		link: function($scope, $element, $attributes, webrtcvideoController, controller){
-			var height = webrtcvideoController.height;
+		link: function($scope, $element){
+			var height = $scope.height;
 			$element.width = 200;
 			$element.height = height;
-			if (webrtcvideoController.takepicture) {
+			if ($scope.takepicture) {
 				$element.getContext('2d').drawImage(video, 0, 0, 200, height);
-				controller.data = $element.toDataURL('image/png');
+				$scope.data = $element.toDataURL('image/png');
 			}
 		}
 	};
@@ -81,10 +72,9 @@ app.directive("camerapicture", function(){
 
 app.directive("photo", function(){
 	return {
-		require: 'camerapicture',
 		restrict: "A",
-		link: ($scope, $element, $attributes, camerapictureController) {
-			$element.setAttribute('src', camerapictureController.data);
+		link: function($scope, $element) {
+			$element.setAttribute('src', $scope.data);
 		}
 	};
 });

@@ -7,6 +7,12 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Node.js Dependencies for facial_recog_demo" level="project" />
+    <orderEntry type="library" name="underscore" level="project" />
+    <orderEntry type="library" name="restangular.js" level="project" />
+    <orderEntry type="library" name="jQuery" level="project" />
+    <orderEntry type="library" name="lodash.js" level="project" />
+    <orderEntry type="library" name="angular.js" level="project" />
   </component>
 </module>
 
