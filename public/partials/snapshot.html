@@ -15,12 +15,12 @@
 	<span>Enter a name to associate with your picture.</span>
 	<br>
 	<form name="user" novalidate>
-		<div ng-show="user.firstname.$error.required">
+		<div ng-show="user.$error.required">
 			<span class="label label-important">A first name is required!</span>
 		</div>
 		<input type="text" ng-model="user.firstname" placeholder="Type first name…" required>
 		<br>
-		<div ng-show="user.lastname.$error.required">
+		<div ng-show="user.$error.required">
 			<span class="label label-important">A last name is required!</span>
 		</div>
 		<input type="text" ng-model="user.lastname" placeholder="Type last name…" required>
