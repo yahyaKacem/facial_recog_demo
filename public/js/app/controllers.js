@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-function SnapshotCtrl($scope, $location, apirequestFactory) {
+function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, formFactory) {
 	// completely and totally ripped off from http://jonashartmann.github.io/webcam-directive demo
 	var _video = null,
 		patData = null,
@@ -11,6 +11,9 @@ function SnapshotCtrl($scope, $location, apirequestFactory) {
 	$scope.showDemos = false;
 	$scope.showSnapShot = false;
 	$scope.webcamError = false;
+	$scope.loading = false;
+	$scope.firstname = formFactory.firstname;
+	$scope.lastname = formFactory.lastname;
 
 	$scope.patOpts = {x: 0, y: 0, w: 25, h: 25};
 
@@ -68,7 +71,9 @@ function SnapshotCtrl($scope, $location, apirequestFactory) {
 
 			patData = idata;
 			if (user.$valid) {
-				var name = $scope.user.firstname.toLowerCase() + '_' + $scope.user.lastname.toLowerCase();
+				var name = $scope.user.firstname.$modelValue.toLowerCase() + '_' + $scope.user.lastname.$modelValue.toLowerCase();
+				formFactory.firstname = $scope.user.firstname.$modelValue;
+				formFactory.lastname = $scope.user.lastname.$modelValue;
 				apirequestFactory.request.name = name;
 				saveToServer(patCanvas, name);
 				$scope.showSnapShot = true;
@@ -99,6 +104,7 @@ function SnapshotCtrl($scope, $location, apirequestFactory) {
 	 * @param name
 	 */
 	var saveToServer = function(canvas, name) {
+		$scope.loading = true;
 		apirequestFactory.request.urls = $location.protocol() + '://' + $location.host() + port + '/camera-images/' + name + '.png';
 
 		// Post image to server via xhr
@@ -117,12 +123,33 @@ function SnapshotCtrl($scope, $location, apirequestFactory) {
 		xhr.open("POST", url,true);
 		xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 		xhr.send("image="+ dataURL);
+
+		// have to wait till image has been saved to server before going to next page
+		function nextwait() {
+			$timeout(function() {
+				$http({method: 'GET', url: apirequestFactory.request.urls}).
+					success(function(data, status, headers, config) {
+						console.log('got image from ' + apirequestFactory.request.urls);
+						console.log(data, status, headers, config);
+						$location.path('add');
+					}).
+					error(function(data, status, headers, config) {
+						console.log('waiting for image from ' + apirequestFactory.request.urls);
+						console.log(data, status, headers, config);
+						nextwait();
+					});
+			}, 10);
+		}
+
+		nextwait();
+
 	}
 }
 
 function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apiresponseFactory) {
 	// param for rekognition's ::FaceAdd: Call face_add for each image you want to add
 	apirequestFactory.request.jobs = 'face_add_[' + apirequestFactory.request.name + ']';
+	$scope.snapshot = apirequestFactory.request.urls;
 
 	/**
 	 * Send image to db via ReKognition API.
@@ -131,22 +158,21 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 		console.log(apirequestFactory.request);
 		rekognitionFactory.one('api').get(apirequestFactory.request).then(function (res) {
 			apiresponseFactory.response = res;
+			$location.path('recognize');
 		}, function (response) {
-			console.log("Error with status code", response.status);
+			apiresponseFactory.response = response.status
 		});
-
-		$location.path('recognize');
 	}
 
 	/**
 	 * Redo Snapshot.
 	 */
 	$scope.redo = function(){
-		$location.path('snapshot');
+		$location.path('/');
 	}
 
 }
 
 function RecognizeCtrl($scope, apiresponseFactory) {
-	$scope.data = apiresponseFactory.api.response;
+	$scope.data = apiresponseFactory.response;
 }

@@ -34,3 +34,12 @@ app.factory('apirequestFactory', function() {
 		'request' : {}
 	};
 });
+
+app.factory('formFactory', function() {
+	return {
+		'data' : {
+			firstname : '',
+			lastname : ''
+		}
+	};
+});
