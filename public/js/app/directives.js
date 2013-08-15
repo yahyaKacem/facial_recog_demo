@@ -3,12 +3,11 @@
 /* Directives */
 var app = angular.module('myApp.directives', []);
 
-app.directive("testButton", function(){
+app.directive("prettyPrint", function(){
 	return {
 		restrict: "A",
-		scope: true,
-		link: function($scope, $element) {
-
+		link: function($scope, $element, $attrs) {
+			$element.prettify($scope.$eval($attrs.prettyPrint));
 		}
 	};
 });

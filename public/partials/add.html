@@ -3,11 +3,6 @@
 		<span>Click 'allow' button above to give demo access to your camera.</span>
 	</li>
 	<li class="demos ng-scope" ng-show="showDemos" style="">
-		<span>Enter a name to associate with your picture.</span>
-		<br>
-		<input type="text" ng-model="name" placeholder="Type name…" required>
-	</li>
-	<li class="demos ng-scope" ng-show="showDemos" style="">
 		<span>Look straight into the camera like Barak Obama's picture.</span>
 		<br>
 		<img src="../img/barak.png" style="max-width: none;">
@@ -18,7 +13,16 @@
 		        placeholder="'img/ajax-loader.gif'">
 		</webcam>
 		<br>
-		<button class="btn btn-large btn-primary" ng-click="makeSnapshot()">Take picture!</button>
+		<span>Enter a name to associate with your picture.</span>
+		<br>
+		<form name="user" novalidate>
+			<div ng-show="user.$error.required">
+				<span class="label label-important">A username is required!</span>
+			</div>
+			<input type="text" ng-model="user.name" placeholder="Type name…" required>
+			<br>
+			<button ng-disabled="!user.$valid" class="btn btn-large btn-primary" ng-click="makeSnapshot(user)">Take picture!</button>
+		</form>
 	</li>
 	<li class="demos ng-scope" ng-show="showSnapShot" style="">
 		<span>Review snapshot.</span>

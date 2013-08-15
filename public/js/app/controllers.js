@@ -6,11 +6,11 @@
 	$scope.name = "Julia Jacobs";
 }*/
 
-function AddCtrl($scope) {
+function AddCtrl($scope, $location, rekognitionFactory, apiresponseFactory) {
 	// completely and totally ripped off from http://jonashartmann.github.io/webcam-directive demo
 	var _video = null,
 		patData = null,
-		imgURL = null;
+		data = {};
 
 	$scope.showDemos = false;
 	$scope.showSnapShot = false;
@@ -43,7 +43,7 @@ function AddCtrl($scope) {
 	/**
 	 * Make a snapshot of the camera data and show it in another canvas.
 	 */
-	$scope.makeSnapshot = function makeSnapshot() {
+	$scope.makeSnapshot = function makeSnapshot(user) {
 		if (_video) {
 			var patCanvas = document.querySelector('#snapshot');
 			if (!patCanvas) return;
@@ -56,8 +56,10 @@ function AddCtrl($scope) {
 			ctxPat.putImageData(idata, 0, 0);
 
 			patData = idata;
-			saveToServer(patCanvas);
-			$scope.showSnapShot = true;
+			if (user.$valid) {
+				saveToServer(patCanvas, $scope.user.name);
+				$scope.showSnapShot = true;
+			}
 		}
 	};
 
@@ -72,8 +74,16 @@ function AddCtrl($scope) {
 	 * Send image to db via ReKognition API.
 	 */
 	$scope.sendImg = function(){
-		console.log('name is ' + $scope.name);
-		console.log('data is ' + imgURL);
+		console.log(data);
+		rekognitionFactory.one('api').get(data).then(function (res) {
+			apiresponseFactory.api.response = res;
+			console.log(res);
+		}, function (response) {
+			apiresponseFactory.api.response = data;
+			console.log("Error with status code", response.status);
+		});
+
+		$location.path('recognize');
 	}
 
 	var getVideoData = function getVideoData(x, y, w, h) {
@@ -85,9 +95,12 @@ function AddCtrl($scope) {
 		return ctx.getImageData(x, y, w, h);
 	};
 
-	var saveToServer = function(canvas) {
+	var saveToServer = function(canvas, name) {
+		data.jobs = 'face_part_aggressive_gender_emotion_age_glass';
+		data.user_id = encodeURIComponent(name);
+		data.urls = $location.protocol() + '://' + $location.host() + ':' + $location.port() + '/camera-images/' + data.user_id + '.png';
 		var dataURL = encodeURIComponent(canvas.toDataURL("image/png"));
-		var url = "/camera/" + encodeURIComponent($scope.name) + "/";
+		var url = "/camera/" + data.user_id + "/";
 		var xhr = new XMLHttpRequest();
 
 		xhr.onreadystatechange = response;
@@ -104,6 +117,6 @@ function AddCtrl($scope) {
 	}
 }
 
-function RecognizeCtrl($scope) {
-	$scope.name = "Julia Jacobs";
+function RecognizeCtrl($scope, apiresponseFactory) {
+	$scope.data = apiresponseFactory.api.response;
 }

@@ -13,6 +13,10 @@ exports.saveImage = function (req, res) {
 	binaryData = new Buffer(base64Data, 'base64').toString('binary');
 
 	fs.writeFile("public/camera-images/" + username + ".png", binaryData, "binary", function (err) {
+		if (err) {
 		console.log(err); // writes out file without error, but it's not a valid image
+		} else {
+			console.log("public/camera-images/" + username + ".png saved")
+		}
 	});
 };

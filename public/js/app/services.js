@@ -5,14 +5,14 @@
 
 // Demonstrate how to register services
 // In this case it is a simple value service.
-angular.module('myApp.services', []).
+var app = angular.module('myApp.services', []);
 
 // Restangular ReKognition service
 // http://rekognition.com/func/api/?api_key={api_key}&api_secret={api_secret}&jobs={jobs}&urls={urls}
 // API Docs: http://v2.rekognition.com/developer/docs
-factory('ReKognition', function(Restangular) {
+app.factory('rekognitionFactory', function(Restangular) {
   return Restangular.withConfig(function(RestangularConfigurer) {
-    RestangularConfigurer.setBaseUrl('http://rekognition.com/func/api');
+    RestangularConfigurer.setBaseUrl('http://rekognition.com/func');
     var defaultParams = {
       api_key: 'ANkv85Gcu8jTcmRn',
       api_secret: 'Hq7elQKQ7zy7GaHu',
@@ -20,4 +20,12 @@ factory('ReKognition', function(Restangular) {
     };
     RestangularConfigurer.setDefaultRequestParams(defaultParams);
   });
+});
+
+app.factory('apiresponseFactory', function() {
+	return {
+		api: {
+			'response' : null
+		}
+	};
 });
