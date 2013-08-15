@@ -6,7 +6,7 @@ function SnapshotCtrl($scope, $location, apirequestFactory) {
 	// completely and totally ripped off from http://jonashartmann.github.io/webcam-directive demo
 	var _video = null,
 		patData = null,
-		port = (process.env.NODE_ENV == 'development') ? ':' + $location.port() : '';;
+		port = _.indexOf($location.host, 'localhost') ? ':' + $location.port() : '';
 
 	$scope.showDemos = false;
 	$scope.showSnapShot = false;
@@ -18,7 +18,6 @@ function SnapshotCtrl($scope, $location, apirequestFactory) {
 	 * Webcam error
 	 * @param err
 	 */
-
 	$scope.onError = function (err) {
 		$scope.$apply(
 			function() {
