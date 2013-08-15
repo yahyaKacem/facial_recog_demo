@@ -6,7 +6,8 @@ angular.module('myApp', ['restangular', 'webcam', 'ui.state', 'myApp.filters', '
 		// For any unmatched url, send to /
 		$urlRouterProvider.otherwise("/")
 
-    $routeProvider.when('/', {templateUrl: 'partials/add.html', controller: 'AddCtrl'});
+    $routeProvider.when('/', {templateUrl: 'partials/snapshot.html', controller: 'SnapshotCtrl'});
+		$routeProvider.when('/add', {templateUrl: 'partials/recognize.html', controller: 'AddCtrl'});
     $routeProvider.when('/recognize', {templateUrl: 'partials/recognize.html', controller: 'RecognizeCtrl'});
     $locationProvider.html5Mode(true);
   }]);

@@ -24,8 +24,12 @@ app.factory('rekognitionFactory', function(Restangular) {
 
 app.factory('apiresponseFactory', function() {
 	return {
-		api: {
-			'response' : null
-		}
+		'response' : {}
+	};
+});
+
+app.factory('apirequestFactory', function() {
+	return {
+		'request' : {}
 	};
 });

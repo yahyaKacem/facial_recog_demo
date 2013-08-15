@@ -42,7 +42,3 @@ Thumbs.db
 # WebStorm IDE generated files #
 ################################
 /.idea
-
-# node.js modules #
-###################
-/node_modules

@@ -1,0 +1,30 @@
+<div class="ng-scope">
+	<span>Click 'allow' button above to give demo access to your camera.</span>
+</div>
+<div class="demos ng-scope" ng-show="showDemos" style="">
+	<span>Look straight into the camera like Barak Obama's picture.</span>
+	<br>
+	<img src="../img/barak.png" style="max-width: none;">
+	<br>
+	<webcam on-stream="onStream(stream,video)"
+	        on-access-denied="onError(err)"
+	        on-streaming="onSuccess(video)"
+	        placeholder="'img/ajax-loader.gif'">
+	</webcam>
+	<br>
+	<span>Enter a name to associate with your picture.</span>
+	<br>
+	<form name="user" novalidate>
+		<div ng-show="user.firstname.$error.required">
+			<span class="label label-important">A first name is required!</span>
+		</div>
+		<input type="text" ng-model="user.firstname" placeholder="Type first name…" required>
+		<br>
+		<div ng-show="user.lastname.$error.required">
+			<span class="label label-important">A last name is required!</span>
+		</div>
+		<input type="text" ng-model="user.lastname" placeholder="Type last name…" required>
+		<br>
+		<button ng-disabled="!user.$valid" class="btn btn-large btn-primary" ng-click="makeSnapshot(user)">Take picture!</button>
+	</form>
+</div>
