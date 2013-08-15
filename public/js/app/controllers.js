@@ -130,12 +130,12 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 				$http({method: 'GET', url: apirequestFactory.request.urls}).
 					success(function(data, status, headers, config) {
 						console.log('got image from ' + apirequestFactory.request.urls);
-						console.log(status, headers, config);
+						console.log(status, config);
 						$location.path('add');
 					}).
 					error(function(data, status, headers, config) {
 						console.log('waiting for image from ' + apirequestFactory.request.urls);
-						console.log(status, headers, config);
+						console.log(status, config);
 						nextwait();
 					});
 			}, 500);
@@ -158,8 +158,10 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 		console.log(apirequestFactory.request);
 		rekognitionFactory.one('api').get(apirequestFactory.request).then(function (res) {
 			apiresponseFactory.response = res;
+			$location.path('/recognize');
 		}, function (response) {
 			apiresponseFactory.response = response.status
+			$location.path('/recognize');
 		});
 	}
 
