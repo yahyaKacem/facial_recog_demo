@@ -155,12 +155,16 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 	 * Send image to db via ReKognition API.
 	 */
 	$scope.sendImg = function(){
-		console.log(apirequestFactory.request);
-		rekognitionFactory.one('api').get(apirequestFactory.request).then(function (res) {
+		var params = apirequestFactory.request;
+		delete params.name;
+		console.log(params);
+		rekognitionFactory.one('api').get(params).then(function (res) {
 			apiresponseFactory.response = res;
+			console.log(res);
 			$location.path('/recognize');
 		}, function (response) {
-			apiresponseFactory.response = response.status
+			apiresponseFactory.response = response;
+			console.log(response);
 			$location.path('/recognize');
 		});
 	}
