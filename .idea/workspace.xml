@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/asdfsdfasdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/jewels.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rtcSample/demo.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/partials/add.html" afterPath="$PROJECT_DIR$/public/partials/snapshot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/add.html" afterPath="$PROJECT_DIR$/public/partials/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/app.js" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/controllers.js" afterPath="$PROJECT_DIR$/public/js/app/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/services.js" afterPath="$PROJECT_DIR$/public/js/app/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
     </list>
     <ignored path="facial_recog_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,10 +70,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="6" selection-start="549" selection-end="549" vertical-scroll-proportion="0.86745214" vertical-offset="56" max-vertical-offset="735">
+            <state line="29" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
               <folding />
             </state>
           </provider>
@@ -133,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/rtcSample/demo.html" />
         <option value="$PROJECT_DIR$/public/js/modules/camera.js" />
         <option value="$PROJECT_DIR$/public/js/app/main.js" />
         <option value="$PROJECT_DIR$/bower.json" />
@@ -149,6 +148,7 @@
         <option value="$PROJECT_DIR$/public/js/app/app.js" />
         <option value="$PROJECT_DIR$/public/js/app/directives.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -482,11 +482,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="168" selection-end="196" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="48" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
@@ -583,7 +578,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="6" selection-start="549" selection-end="549" vertical-scroll-proportion="0.86745214" vertical-offset="56" max-vertical-offset="735">
+        <state line="29" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
           <folding />
         </state>
       </provider>
