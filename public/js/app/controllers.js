@@ -159,12 +159,13 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 		delete params.name;
 		console.log(params);
 		rekognitionFactory.one('api').get(params).then(function (res) {
-			apiresponseFactory.response = res;
-			console.log(res);
+			apiresponseFactory.response = { response: res };
+			console.log('we did it!', res);
 			$location.path('/recognize');
 		}, function (response) {
-			apiresponseFactory.response = response;
-			console.log(response);
+			var status = response.status;
+			apiresponseFactory.response = { 'errorstatus' : status };
+			console.log("we didn't do it. :(",status);
 			$location.path('/recognize');
 		});
 	}
