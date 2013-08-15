@@ -138,7 +138,7 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 						console.log(status, config);
 						nextwait();
 					});
-			}, 500);
+			}, 1000);
 		}
 
 		nextwait();
