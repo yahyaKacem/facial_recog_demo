@@ -23,12 +23,12 @@ app.directive("recogApi", function(){
 				user_id: 'uverse'
 			};
 			var params = _.extend(defaultParams, $scope.params);
+
 			$element.on('click', function(){
 				$.ajax({
 					url: 'http://rekognition.com/func/api/',
 					data: params,
 					cache: false,
-					processData: false,
 					dataType:"json",
 					type: 'POST',
 					success: function (data) {
