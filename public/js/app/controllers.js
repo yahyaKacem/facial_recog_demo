@@ -158,7 +158,7 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 		var params = apirequestFactory.request;
 		delete params.name;
 		console.log(params);
-		rekognitionFactory.one('api').post(params).then(function (face_add) {
+		rekognitionFactory.one('api').customPOST(params).then(function (face_add) {
 			console.log("we got the service!", face_add);
 				apiresponseFactory.response = { response: face_add };
 				console.log('we posted it!', face_add);
