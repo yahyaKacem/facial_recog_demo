@@ -150,15 +150,9 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 	// param for rekognition's ::FaceAdd: Call face_add for each image you want to add
 	apirequestFactory.request.jobs = 'face_add_[' + apirequestFactory.request.name + ']';
 	$scope.snapshot = apirequestFactory.request.urls;
-
-	/**
-	 * Send image to db via ReKognition API.
-	 */
-	$scope.sendImg = function () {
-		var params = apirequestFactory.request;
-		delete params.name;
-		$scope.params = params;
-	}
+	var params = apirequestFactory.request;
+	delete params.name;
+	$scope.params = params;
 
 	/**
 	 * Redo Snapshot.

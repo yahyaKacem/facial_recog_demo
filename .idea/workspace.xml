@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/directives.js" afterPath="$PROJECT_DIR$/public/js/app/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/controllers.js" afterPath="$PROJECT_DIR$/public/js/app/controllers.js" />
     </list>
     <ignored path="facial_recog_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="26" selection-start="582" selection-end="582" vertical-scroll-proportion="0.4955157" vertical-offset="154" max-vertical-offset="705">
+            <state line="19" column="36" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="37" selection-start="4202" selection-end="4202" vertical-scroll-proportion="0.0" vertical-offset="1939" max-vertical-offset="2685">
+            <state line="151" column="51" selection-start="4303" selection-end="4303" vertical-scroll-proportion="0.4618834" vertical-offset="2059" max-vertical-offset="2595">
               <folding />
             </state>
           </provider>
@@ -143,9 +143,9 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/js/app/services.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
         <option value="$PROJECT_DIR$/public/partials/add.html" />
         <option value="$PROJECT_DIR$/public/js/app/directives.js" />
+        <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
       </list>
     </option>
   </component>
@@ -457,7 +457,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,7 +468,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27259684" sideWeight="0.67234045" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27259684" sideWeight="0.67234045" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32765958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -637,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="37" selection-start="4202" selection-end="4202" vertical-scroll-proportion="0.0" vertical-offset="1939" max-vertical-offset="2685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="6" selection-start="285" selection-end="285" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
@@ -655,7 +648,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="26" selection-start="582" selection-end="582" vertical-scroll-proportion="0.4955157" vertical-offset="154" max-vertical-offset="705">
+        <state line="19" column="36" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="51" selection-start="4303" selection-end="4303" vertical-scroll-proportion="0.4618834" vertical-offset="2059" max-vertical-offset="2595">
           <folding />
         </state>
       </provider>
