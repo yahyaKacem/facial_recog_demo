@@ -157,17 +157,7 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 	$scope.sendImg = function () {
 		var params = apirequestFactory.request;
 		delete params.name;
-		console.log(params);
-		rekognitionFactory.one('api').get(params).then(function (face_add) {
-			console.log("we got the service!", face_add);
-				apiresponseFactory.response = { response: face_add };
-				console.log('we posted it!', face_add);
-				$location.path('/recognize');
-		}, function (error) {
-			apiresponseFactory.response = { 'error': error };
-			console.log("we didn't get the service. :(", status);
-			$location.path('/recognize');
-		});
+		$scope.params = params;
 	}
 
 	/**
