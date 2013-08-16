@@ -11,7 +11,7 @@
 	  "angular-ui-router": "*",
     "jquery": "*",
     "lodash": "~1.2.0",
-    "restangular": "*",
+    "restangular": "~1.1.2",
     "underscore": "*"
   }
 }

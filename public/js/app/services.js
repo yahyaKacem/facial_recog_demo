@@ -12,7 +12,7 @@ var app = angular.module('myApp.services', []);
 // API Docs: http://v2.rekognition.com/developer/docs
 app.factory('rekognitionFactory', function(Restangular) {
   return Restangular.withConfig(function(RestangularConfigurer) {
-    RestangularConfigurer.setBaseUrl('http://rekognition.com/func');
+    RestangularConfigurer.setBaseUrl('http://rekognition.com/func/');
     var defaultParams = {
       api_key: 'ANkv85Gcu8jTcmRn',
       api_secret: 'Hq7elQKQ7zy7GaHu',

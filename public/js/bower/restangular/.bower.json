@@ -1,6 +1,6 @@
 {
   "name": "restangular",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "main": "./dist/restangular.min.js",
   "description": "Restful Resources service for AngularJS apps",
   "repository": {
@@ -16,11 +16,11 @@
     "components",
     "lib"
   ],
-  "_release": "1.1.0",
+  "_release": "1.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "1.1.0",
-    "commit": "5fca4eb252caa7e0db755189c1d1adef7c03b23e"
+    "tag": "1.1.2",
+    "commit": "270b42b1da6eaf30edf2033555c01b4863a49118"
   },
   "_source": "git://github.com/mgonto/restangular.git",
   "_target": "*"

@@ -6,8 +6,8 @@ var app = angular.module('myApp.directives', []);
 app.directive("prettyPrint", function(){
 	return {
 		restrict: "A",
-		link: function($scope, $element, $attrs) {
-			$element.prettify($scope.$eval($attrs.prettyPrint));
+		link: function($scope, $element) {
+			$element.prettify({highlight : true}, $scope.data);
 		}
 	};
 });

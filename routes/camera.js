@@ -3,7 +3,7 @@
  */
 var fs = require("fs");
 
-exports.saveImage = function (req, res) {
+exports.saveImage = function (req, res, next) {
 	var username = req.params.username,
 		image = decodeURIComponent(req.body.image),
 		binaryData;
