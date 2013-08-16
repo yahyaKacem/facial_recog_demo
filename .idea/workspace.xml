@@ -28,7 +28,7 @@
       <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="692" selection-end="692" vertical-scroll-proportion="0.66367716" vertical-offset="154" max-vertical-offset="705">
+            <state line="25" column="26" selection-start="582" selection-end="582" vertical-scroll-proportion="0.4955157" vertical-offset="154" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -457,7 +457,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -468,7 +468,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27259684" sideWeight="0.67234045" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27259684" sideWeight="0.67234045" order="0" side_tool="false" content_ui="combo" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32765958" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -655,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="692" selection-end="692" vertical-scroll-proportion="0.66367716" vertical-offset="154" max-vertical-offset="705">
+        <state line="25" column="26" selection-start="582" selection-end="582" vertical-scroll-proportion="0.4955157" vertical-offset="154" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
