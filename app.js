@@ -17,6 +17,11 @@ app.configure(function(){
 	app.use(express.logger('dev'));
   app.use(express.methodOverride());
   app.use(express.bodyParser());
+	app.use(function(req, res, next) {
+		res.header("Access-Control-Allow-Origin", "*");
+		res.header("Access-Control-Allow-Headers", "X-Requested-With");
+		next();
+	});
   app.use(express.static(__dirname + '/public'));
   app.use(express.errorHandler({
     dumpExceptions: true,
@@ -31,6 +36,13 @@ app.configure('development', function(){
 
 app.configure('production', function(){
   app.use(express.errorHandler());
+});
+
+app.all('/', function(req, res, next) {
+	res.type('html');
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "X-Requested-With");
+	next();
 });
 
 // Routes
