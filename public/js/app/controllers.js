@@ -103,7 +103,7 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 	 * @param canvas
 	 * @param name
 	 */
-	var saveToServer = function (canvas, name) {
+/*	var saveToServer = function (canvas, name) {
 		$scope.loading = true;
 		apirequestFactory.request.urls = $location.protocol() + '://' + $location.host() + port + '/camera-images/' + name + '.png';
 
@@ -143,16 +143,24 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 
 		nextwait();
 
-	}
+	}*/
 }
 
 function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apiresponseFactory) {
+	$scope.show = false;
 	// param for rekognition's ::FaceAdd: Call face_add for each image you want to add
 	apirequestFactory.request.jobs = 'face_add_[' + apirequestFactory.request.name + ']';
 	$scope.snapshot = apirequestFactory.request.urls;
 	var params = apirequestFactory.request;
 	delete params.name;
 	$scope.params = params;
+
+	$scope.errorMsg = 'No face detected.  Please try again facing the camera. - ' + $scope.err;
+	$scope.successMsg = 'Your snapshot has been successfully added!';
+
+	$scope.closeAlert = function() {
+		$scope.showresponse = false;
+	};
 
 	/**
 	 * Redo Snapshot.

@@ -1,9 +1,13 @@
 <div class="demos ng-scope" style="">
+	<alert type="error" ng-show="showError" close="closeAlert()">{{ errorMsg }}</alert>
+	<alert type="success" ng-show="showSuccess" close="closeAlert()">{{ successMsg }}</alert>
+	<div ng-show="showSuccess || showError" data="{{ data }}" pretty-print></div>
 	<h2>Review snapshot.</h2>
 	<br>
 	<img src="{{ snapshot }}">
 	<br>
 	<br>
 	<button type="button" class="btn btn-large" ng-click="redo()">Take again</button>
+	<button type="button" class="btn btn-large btn-primary" recog-api>Add image</button>
 	<button type="button" class="btn btn-large btn-primary" recog-api>Continue</button>
 </div>

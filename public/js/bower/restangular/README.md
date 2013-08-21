@@ -14,64 +14,63 @@ This service is a perfect fit for any WebApp that uses Restful Resources as the 
 
 - [Restangular](#restangular)
 - [Table of contents](#table-of-contents)
-  - [Differences with $resource](#differences-with-resource)
+	- [Differences with $resource](#differences-with-resource)
 - [How do I add this to my project?](#how-do-i-add-this-to-my-project)
 - [Dependencies](#dependencies)
 - [Starter Guide](#starter-guide)
-  - [Quick configuration for Lazy Readers](#quick-configuration-for-lazy-readers)
-  - [Adding dependency to Restangular module in your app](#adding-dependency-to-restangular-module-in-your-app)
-  - [Using Restangular](#using-restangular)
-    - [Creating Main Restangular object](#creating-main-restangular-object)
-    - [Let's code!](#lets-code)
-  - [Configuring Restangular](#configuring-restangular)
-    - [Properties](#properties)
-      - [setBaseUrl](#setbaseurl)
-      - [setExtraFields](#setextrafields)
-      - [setParentless](#setparentless)
-      - [setDefaultHttpFields](#setdefaulthttpfields)
-      - [addElementTransformer](#addelementtransformer)
-      - [setOnElemRestangularized](#setonelemrestangularized)
-      - [setResponseInterceptor (or setResponseExtractor. It's an Alias)](#setresponseinterceptor-or-setresponseextractor-its-an-alias)
-      - [setFullResponseInterceptor](#setfullresponseinterceptor)
-      - [setRequestInterceptor](#setrequestinterceptor)
-      - [setFullRequestInterceptor](#setfullrequestinterceptor)
-      - [setErrorInterceptor](#seterrorinterceptor)
-      - [setRestangularFields](#setrestangularfields)
-      - [setMethodOverriders](#setmethodoverriders)
-      - [setDefaultRequestParams](#setdefaultrequestparams)
-      - [setFullResponse](#setfullresponse)
-      - [setDefaultHeaders](#setdefaultheaders)
-      - [setRequestSuffix](#setrequestsuffix)
-      - [setUseCannonicalId](#setusecannonicalid)
-    - [How to configure them globally](#how-to-configure-them-globally)
-      - [Configuring in the config](#configuring-in-the-config)
-      - [Configuring in the run](#configuring-in-the-run)
-    - [How to create a Restangular service with a different configuration from the global one](#how-to-create-a-restangular-service-with-a-different-configuration-from-the-global-one)
-  - [Methods description](#methods-description)
-    - [Restangular methods](#restangular-methods)
-    - [Element methods](#element-methods)
-    - [Collection methods](#collection-methods)
-    - [Custom methods](#custom-methods)
-  - [Copying elements](#copying-elements)
-  - [Enhanced promises](#enhanced-promises)
-  - [Using Self reference resources](#using-self-reference-resources)
-  - [URL Building](#url-building)
-  - [Creating new Restangular Methods](#creating-new-restangular-methods)
-  - [Adding Custom Methods to Collections](#adding-custom-methods-to-collections)
-    - [Example:](#example)
-  - [Adding Custom Methods to Models](#adding-custom-methods-to-models)
-    - [Example:](#example-1)
+	- [Quick configuration for Lazy Readers](#quick-configuration-for-lazy-readers)
+	- [Adding dependency to Restangular module in your app](#adding-dependency-to-restangular-module-in-your-app)
+	- [Using Restangular](#using-restangular)
+		- [Creating Main Restangular object](#creating-main-restangular-object)
+		- [Let's code!](#lets-code)
+	- [Configuring Restangular](#configuring-restangular)
+		- [Properties](#properties)
+			- [setBaseUrl](#setbaseurl)
+			- [setExtraFields](#setextrafields)
+			- [setParentless](#setparentless)
+			- [setDefaultHttpFields](#setdefaulthttpfields)
+			- [addElementTransformer](#addelementtransformer)
+			- [setOnElemRestangularized](#setonelemrestangularized)
+			- [setResponseInterceptor (or setResponseExtractor. It's an Alias)](#setresponseinterceptor-or-setresponseextractor-its-an-alias)
+			- [setRequestInterceptor](#setrequestinterceptor)
+			- [setFullRequestInterceptor](#setfullrequestinterceptor)
+			- [setErrorInterceptor](#seterrorinterceptor)
+			- [setRestangularFields](#setrestangularfields)
+			- [setMethodOverriders](#setmethodoverriders)
+			- [setDefaultRequestParams](#setdefaultrequestparams)
+			- [setFullResponse](#setfullresponse)
+			- [setDefaultHeaders](#setdefaultheaders)
+			- [setRequestSuffix](#setrequestsuffix)
+			- [setUseCannonicalId](#setusecannonicalid)
+		- [How to configure them globally](#how-to-configure-them-globally)
+			- [Configuring in the config](#configuring-in-the-config)
+			- [Configuring in the run](#configuring-in-the-run)
+		- [How to create a Restangular service with a different configuration from the global one](#how-to-create-a-restangular-service-with-a-different-configuration-from-the-global-one)
+	- [Methods description](#methods-description)
+		- [Restangular methods](#restangular-methods)
+		- [Element methods](#element-methods)
+		- [Collection methods](#collection-methods)
+		- [Custom methods](#custom-methods)
+	- [Copying elements](#copying-elements)
+	- [Enhanced promises](#enhanced-promises)
+	- [Using Self reference resources](#using-self-reference-resources)
+	- [URL Building](#url-building)
+	- [Creating new Restangular Methods](#creating-new-restangular-methods)
+	- [Adding Custom Methods to Collections](#adding-custom-methods-to-collections)
+		- [Example:](#example)
+	- [Adding Custom Methods to Models](#adding-custom-methods-to-models)
+		- [Example:](#example-1)
 - [FAQ](#faq)
-      - [How can I handle errors?](#how-can-i-handle-errors)
-      - [I need to send one header in EVERY Restangular request, how do I do this?](#i-need-to-send-one-header-in-every-restangular-request-how-do-i-do-this)
-      - [Can I cache requests?](#can-i-cache-requests)
-      - [Can it be used in $routeProvider.resolve?](#can-it-be-used-in-routeproviderresolve)
-      - [My response is actually wrapped with some metadata. How do I get the data in that case?](#my-response-is-actually-wrapped-with-some-metadata-how-do-i-get-the-data-in-that-case)
-      - [I use Mongo and the ID of the elements is _id not id as the default. Therefore requests are sent to undefined routes](#i-use-mongo-and-the-id-of-the-elements-is-_id-not-id-as-the-default-therefore-requests-are-sent-to-undefined-routes)
-      - [How do I handle CRUD operations in a List returned by Restangular?](#how-do-i-handle-crud-operations-in-a-list-returned-by-restangular)
-      - [When I set baseUrl with a port, it's stripped out.](#when-i-set-baseurl-with-a-port-its-stripped-out)
-      - [How can I access the unrestangularized element as well as the restangularized one?](#how-can-i-access-the-unrestangularized-element-as-well-as-the-restangularized-one)
-      - [Why does this depend on Lodash / Underscore?](#why-does-this-depend-on-lodash--underscore)
+			- [How can I handle errors?](#how-can-i-handle-errors)
+			- [I need to send one header in EVERY Restangular request, how do I do this?](#i-need-to-send-one-header-in-every-restangular-request-how-do-i-do-this)
+			- [Can I cache requests?](#can-i-cache-requests)
+			- [Can it be used in $routeProvider.resolve?](#can-it-be-used-in-routeproviderresolve)
+			- [My response is actually wrapped with some metadata. How do I get the data in that case?](#my-response-is-actually-wrapped-with-some-metadata-how-do-i-get-the-data-in-that-case)
+			- [I use Mongo and the ID of the elements is _id not id as the default. Therefore requests are sent to undefined routes](#i-use-mongo-and-the-id-of-the-elements-is-_id-not-id-as-the-default-therefore-requests-are-sent-to-undefined-routes)
+			- [How do I handle CRUD operations in a List returned by Restangular?](#how-do-i-handle-crud-operations-in-a-list-returned-by-restangular)
+			- [When I set baseUrl with a port, it's stripped out.](#when-i-set-baseurl-with-a-port-its-stripped-out)
+			- [How can I access the unrestangularized element as well as the restangularized one?](#how-can-i-access-the-unrestangularized-element-as-well-as-the-restangularized-one)
+			- [Why does this depend on Lodash / Underscore?](#why-does-this-depend-on-lodash--underscore)
 - [Supported Angular versions](#supported-angular-versions)
 - [Server Frameworks](#server-frameworks)
 - [Releases Notes](#releases-notes)
@@ -342,27 +341,18 @@ This can be used together with `addRestangularMethod` (Explained later) to add c
 
 
 #### setResponseInterceptor (or setResponseExtractor. It's an Alias)
-The responseInterceptor is called after we get each response from the server. It's a function that receives 4 arguments:
+The responseInterceptor is called after we get each response from the server. It's a function that receives this arguments:
 
-* **response**: The response got from the server
-* **operation**: The operation made. It'll be the HTTP method used except for a `GET` which returns a list of element which will return `getList` so that you can distinguish them.
-* **what**: The model that's being requested. It can be for example: `accounts`, `buildings`, etc.
-* **url**: The relative URL being requested. For example: `/api/v1/accounts/123`
-
-Some of the use cases of the responseInterceptor are handling wrapped responses and enhancing response elements with more methods among others.
-
-#### setFullResponseInterceptor
-The fullResponseInterceptor is executed after the response data has been restangularized but before the promise is resolved. This allows you to transform the restangularized data based on response headers and intercept promise resolution if necessary. This function receives the following arguments:
-
-
-* **data**: Response data
+* **data**: The data received got from the server
 * **operation**: The operation made. It'll be the HTTP method used except for a `GET` which returns a list of element which will return `getList` so that you can distinguish them.
 * **what**: The model that's being requested. It can be for example: `accounts`, `buildings`, etc.
 * **url**: The relative URL being requested. For example: `/api/v1/accounts/123`
 * **response**: Full server response including headers
 * **deferred**: The deferred promise for the request.
 
-The fullResponseInterceptor must return the restangularized data element.
+Some of the use cases of the responseInterceptor are handling wrapped responses and enhancing response elements with more methods among others.
+
+The responseInterceptor must return the restangularized data element.
 
 #### setRequestInterceptor
 The requestInterceptor is called before sending any data to the server. It's a function that must return the element to be requested. This function receives the following arguments:
@@ -572,8 +562,8 @@ This are the methods that can be called in the Restangular object.
 * **customGET(path, [params, headers])**: Does a GET to the specific path. Optionally you can set params and headers.
 * **customGETLIST(path, [params, headers])**: Does a GET to the specific path. **In this case, you expect to get an array, not a single element**. Optionally you can set params and headers.
 * **customDELETE(path, [params, headers])**: Does a DELETE to the specific path. Optionally you can set params and headers.
-* **customPOST(path, [params, headers, elem])**: Does a POST to the specific path. Optionally you can set params and headers and elem. Elem is the element to post. If it's not set, it's assumed that it's the element itself from which you're calling this function.
-* **customPUT(path, [params, headers, elem])**: Does a PUT to the specific path. Optionally you can set params and headers and elem. Elem is the element to post. If it's not set, it's assumed that it's the element itself from which you're calling this function.
+* **customPOST([elem, path, params, headers])**: Does a POST to the specific path. Optionally you can set params and headers and elem. Elem is the element to post. If it's not set, it's assumed that it's the element itself from which you're calling this function.
+* **customPUT([elem, path, params, headers])**: Does a PUT to the specific path. Optionally you can set params and headers and elem. Elem is the element to post. If it's not set, it's assumed that it's the element itself from which you're calling this function.
 * **customOperation(operation, path, [params, headers, elem])**: This does a custom operation to the path that we specify. This method is actually used from all the others in this subsection. Operation can be one of: get, post, put, delete, head, options, patch, trace
 * **addRestangularMethod(name, operation, [path, params, headers, elem])**: This will add a new restangular method to this object with the name `name` to the operation and path specified (or current path otherwise). There's a section on how to do this later. 
 
