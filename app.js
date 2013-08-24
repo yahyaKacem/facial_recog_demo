@@ -9,7 +9,6 @@ var express = require("express"),
 		camera = require('./routes/camera'),
     port    = parseInt(process.env.PORT, 10) || 5000;
 
-
 // Configuration
 
 app.configure(function(){
@@ -19,7 +18,8 @@ app.configure(function(){
   app.use(express.bodyParser());
 	app.use(function(req, res, next) {
 		res.header("Access-Control-Allow-Origin", "*");
-		res.header("Access-Control-Allow-Headers", "X-Requested-With");
+		res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+		res.header('Access-Control-Allow-Headers', 'Content-Type');
 		next();
 	});
   app.use(express.static(__dirname + '/public'));
@@ -40,8 +40,6 @@ app.configure('production', function(){
 
 app.all('/', function(req, res, next) {
 	res.type('html');
-	res.header("Access-Control-Allow-Origin", "*");
-	res.header("Access-Control-Allow-Headers", "X-Requested-With");
 	next();
 });
 

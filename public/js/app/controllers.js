@@ -146,7 +146,7 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 	}
 }
 
-function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apiresponseFactory) {
+function AddCtrl($scope, $location, rekognitionService, apirequestFactory, apiresponseFactory) {
 	// param for rekognition's ::FaceAdd: Call face_add for each image you want to add
 	apirequestFactory.request.jobs = 'face_add_[' + apirequestFactory.request.name + ']';
 	$scope.snapshot = apirequestFactory.request.urls;
@@ -155,7 +155,7 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 	$scope.params = params;
 
 	$scope.addImage = function() {
-
+		rekognitionService.add(params);
 	}
 
 	/**

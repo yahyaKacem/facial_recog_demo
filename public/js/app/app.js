@@ -2,7 +2,8 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', ['restangular', 'webcam', 'ui.state', 'myApp.filters', 'myApp.services', 'myApp.directives']).
-  config(['$routeProvider', '$urlRouterProvider', '$locationProvider', function($routeProvider, $urlRouterProvider, $locationProvider) {
+  config(['$routeProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',  function($routeProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+		delete $httpProvider.defaults.headers.common['X-Requested-With'];
 		// For any unmatched url, send to /
 		$urlRouterProvider.otherwise("/")
 
