@@ -47,15 +47,15 @@ app.service('addImage', function(){
 
 app.service('rekognitionService', function(Restangular) {
  return Restangular.withConfig(function(RestangularConfigurer) {
- RestangularConfigurer.setBaseUrl('http://rekognition.com/func/');
- var defaultParams = {
- api_key: 'ANkv85Gcu8jTcmRn',
- api_secret: 'Hq7elQKQ7zy7GaHu',
- name_space: 'poc',
- user_id: 'uverse'
- };
- RestangularConfigurer.setDefaultRequestParams(defaultParams);
- });
+	 RestangularConfigurer.setBaseUrl('http://rekognition.com/func/');
+	 var defaultParams = {
+		 api_key: 'ANkv85Gcu8jTcmRn',
+		 api_secret: 'Hq7elQKQ7zy7GaHu',
+		 name_space: 'poc',
+		 user_id: 'uverse'
+	 };
+	 RestangularConfigurer.setDefaultRequestParams(defaultParams);
+	 });
  });
 
 app.factory('apiresponseFactory', function() {

@@ -103,7 +103,7 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 	 * @param canvas
 	 * @param name
 	 */
-/*	var saveToServer = function (canvas, name) {
+	var saveToServer = function (canvas, name) {
 		$scope.loading = true;
 		apirequestFactory.request.urls = $location.protocol() + '://' + $location.host() + port + '/camera-images/' + name + '.png';
 
@@ -143,10 +143,10 @@ function SnapshotCtrl($scope, $location, $timeout, $http, apirequestFactory, for
 
 		nextwait();
 
-	}*/
+	}
 }
 
-function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apiresponseFactory) {
+function AddCtrl($scope, $location, rekognitionService, apirequestFactory, apiresponseFactory) {
 	$scope.show = false;
 	// param for rekognition's ::FaceAdd: Call face_add for each image you want to add
 	apirequestFactory.request.jobs = 'face_add_[' + apirequestFactory.request.name + ']';
@@ -160,6 +160,20 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 
 	$scope.closeAlert = function() {
 		$scope.showresponse = false;
+	};
+
+	$scope.addImage = function() {
+		rekognitionService.one('api').get(params).then(function (face_add) {
+			console.log("we got the service!", face_add);
+			apiresponseFactory.response = { response: face_add };
+			console.log('we posted it!', face_add);
+			$location.path('/recognize');
+		}, function (error) {
+			apiresponseFactory.response = { 'error': error };
+			console.log("we didn't get the service. :(", status);
+			$location.path('/recognize');
+		});
+
 	};
 
 	/**
