@@ -154,6 +154,10 @@ function AddCtrl($scope, $location, rekognitionFactory, apirequestFactory, apire
 	delete params.name;
 	$scope.params = params;
 
+	$scope.addImage = function() {
+
+	}
+
 	/**
 	 * Redo Snapshot.
 	 */
