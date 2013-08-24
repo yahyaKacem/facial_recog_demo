@@ -1,31 +1,25 @@
 'use strict';
 
 /* Services */
-
-
-// Demonstrate how to register services
-// In this case it is a simple value service.
 var app = angular.module('myApp.services', []);
 
-// Restangular ReKognition service
-// http://rekognition.com/func/api/?api_key={api_key}&api_secret={api_secret}&jobs={jobs}&urls={urls}
-// API Docs: http://v2.rekognition.com/developer/docs
-app.service('rekognitionService', function ($http, $q) {
+/**
+ * Saves canvas image to server
+ */
+app.service('localImageSaveService', function ($http, $location, $q) {
+	var loading = true;
 	return {
-		add: function (params) {
-			var defaultParams = {
-				api_key: 'ANkv85Gcu8jTcmRn',
-				api_secret: 'Hq7elQKQ7zy7GaHu',
-				name_space: 'poc',
-				user_id: 'uverse'
-			};
-
-			_.extend(params, defaultParams);
+		loading: loading,
+		saveToServer: function (canvas, name) {
+			var dataURL = encodeURIComponent(canvas.toDataURL("image/png"));
+			var url = "/camera/" + name + "/";
 
 			var config = {
 				method: 'POST',
-				url: 'http://rekognition.com/func/api/',
-				params: params
+				url: url,
+				data: $.param({ image: dataURL }),
+				//params: "image=" + dataURL,
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			};
 
 			var deferred = $q.defer();
@@ -46,13 +40,60 @@ app.service('rekognitionService', function ($http, $q) {
 	}
 });
 
-app.factory('apiresponseFactory', function () {
+/**
+ * Restangular ReKognition service
+ * http://rekognition.com/func/api/?api_key={api_key}&api_secret={api_secret}&jobs={jobs}&urls={urls}
+ * API Docs: http://v2.rekognition.com/developer/docs
+ */
+app.service('rekognitionService', function ($http, $q, $location) {
+	return {
+		add: function (params) {
+			var defaultParams = {
+				api_key: 'ANkv85Gcu8jTcmRn',
+				api_secret: 'Hq7elQKQ7zy7GaHu',
+				name_space: 'poc',
+				user_id: 'uverse'
+			};
+
+			// hard coding image url if running on localhost
+			params.urls = _.indexOf($location.host, 'localhost') ? 'http://farm3.static.flickr.com/2566/3896283279_0209be7a67.jpg' : params.urls;
+
+			_.extend(params, defaultParams);
+
+			var config = {
+				method: 'GET',
+				url: 'http://rekognition.com/func/api/',
+				params: params,
+				headers: {
+					'contentType': false
+				}
+			};
+
+			var deferred = $q.defer();
+
+			$http(config).
+				success(function (data, status, headers, config) {
+					deferred.resolve(data);
+					// this callback will be called asynchronously
+					// when the response is available
+				}).
+				error(function (data, status, headers, config) {
+					deferred.reject();
+					// called asynchronously if an error occurs
+					// or server returns response with an error status.
+				});
+			return deferred.promise;
+		}
+	}
+});
+
+app.factory('apiResponseFactory', function () {
 	return {
 		'response': {}
 	};
 });
 
-app.factory('apirequestFactory', function () {
+app.factory('apiRequestFactory', function () {
 	return {
 		'request': {}
 	};

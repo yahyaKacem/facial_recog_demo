@@ -4,6 +4,7 @@
 angular.module('myApp', ['restangular', 'webcam', 'ui.state', 'myApp.filters', 'myApp.services', 'myApp.directives']).
   config(['$routeProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider',  function($routeProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 		delete $httpProvider.defaults.headers.common['X-Requested-With'];
+//		delete $httpProvider.defaults.headers.common['Content-Type'];
 		// For any unmatched url, send to /
 		$urlRouterProvider.otherwise("/")
 
