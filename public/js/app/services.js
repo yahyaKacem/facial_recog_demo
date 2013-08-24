@@ -11,26 +11,28 @@ var app = angular.module('myApp.services', []);
 // http://rekognition.com/func/api/?api_key={api_key}&api_secret={api_secret}&jobs={jobs}&urls={urls}
 // API Docs: http://v2.rekognition.com/developer/docs
 app.factory('rekognitionFactory', function($http, $q) {
-  return function() {
-	  var defaultParams = {
-		  api_key: 'ANkv85Gcu8jTcmRn',
-		  api_secret: 'Hq7elQKQ7zy7GaHu',
-		  name_space: 'poc',
-		  user_id: 'uverse'
-	  };
-	  var params = _.extend(defaultParams, $scope.params);
-	  console.log(params);
-		  $.ajax({
-			  url: 'http://rekognition.com/func/api/',
-			  data: params,
-			  cache: false,
-			  dataType:"json",
-			  type: 'POST',
-			  success: function (data) {
-				  console.log(data);
-			  }
-		  });
-  }
+	return function (params) {
+		var config = {
+			method: 'POST',
+			url: 'http://rekognition.com/func/api/',
+			params: params
+		};
+
+		var deferred = $q.defer();
+
+		$http(config).
+			success(function (data, status, headers, config) {
+				deferred.resolve(data);
+				// this callback will be called asynchronously
+				// when the response is available
+			}).
+			error(function (data, status, headers, config) {
+				deferred.reject();
+				// called asynchronously if an error occurs
+				// or server returns response with an error status.
+			});
+		return deferred.promise;
+	};
 });
 
 app.factory('apiresponseFactory', function() {
