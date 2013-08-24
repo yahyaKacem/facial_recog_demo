@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/camera-images/yo_yo.png" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/fw_lm.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/hey_hey.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/jey_lad.png" afterPath="" />
@@ -57,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="8" selection-start="587" selection-end="587" vertical-scroll-proportion="0.6932773" vertical-offset="0" max-vertical-offset="1710">
+            <state line="22" column="8" selection-start="587" selection-end="587" vertical-scroll-proportion="-13.2" vertical-offset="0" max-vertical-offset="1710">
               <folding />
             </state>
           </provider>
@@ -102,7 +103,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="32" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="885">
+            <state line="39" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="855">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="camera.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/camera.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.5988024" vertical-offset="0" max-vertical-offset="501">
               <folding />
             </state>
           </provider>
@@ -202,6 +212,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="facial_recog_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facial_recog_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facial_recog_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/camera.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="19" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -511,13 +528,6 @@
     <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="358" selection-end="501" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
@@ -569,7 +579,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="587" selection-end="587" vertical-scroll-proportion="0.6932773" vertical-offset="0" max-vertical-offset="1710">
+        <state line="22" column="8" selection-start="587" selection-end="587" vertical-scroll-proportion="-13.2" vertical-offset="0" max-vertical-offset="1710">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/camera.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="655" selection-end="655" vertical-scroll-proportion="0.5988024" vertical-offset="0" max-vertical-offset="501">
           <folding />
         </state>
       </provider>
