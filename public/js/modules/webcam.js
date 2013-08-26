@@ -42,7 +42,7 @@ angular.module('webcam', [])
             videoElem.src = vendorURL.createObjectURL(stream);
           }
 
-	        $scope.createCanvas(videoElem);
+	        $scope.canvasToVideoDimensions(videoElem);
 
           /* Start playing the video to show the stream from the webcam*/
           videoElem.play();
