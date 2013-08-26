@@ -14,7 +14,13 @@ app.directive("prettyPrint", function () {
 
 app.directive("webcamCanvas", function () {
 	return {
-		restrict: "A",
+		template:
+			'<div class="webcamcanvas" ng-transclude>' +
+			'<canvas id="snapshot" ng-hide="true"></canvas>' +
+			'</div>',
+		restrict: 'E',
+		replace: true,
+		transclude: true,
 		scope: {
 			canvasToVideoDimensions: '&'
 		},
@@ -27,7 +33,7 @@ app.directive("webcamCanvas", function () {
 			 * Creates canvas el
 			 * @param videoElem
 			 */
-			$scope.canvasToVideoDimensions = function (videoElem) {
+			var canvasToVideoDimensions = function (videoElem) {
 				// The video element contains the captured camera data
 				_video = videoElem;
 				patOpts.w = _video.width;

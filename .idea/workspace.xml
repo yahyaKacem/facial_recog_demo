@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/directives.js" afterPath="$PROJECT_DIR$/public/js/app/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/snapshot.html" afterPath="$PROJECT_DIR$/public/partials/snapshot.html" />
     </list>
     <ignored path="facial_recog_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="26" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1155">
+            <state line="27" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="0.93317974" vertical-offset="0" max-vertical-offset="1245">
               <folding />
             </state>
           </provider>
@@ -37,16 +38,16 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="28" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1785">
+            <state line="32" column="18" selection-start="735" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snapshot.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="snapshot.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="411" selection-end="411" vertical-scroll-proportion="0.5905512" vertical-offset="0" max-vertical-offset="765">
+            <state line="38" column="81" selection-start="2122" selection-end="2122" vertical-scroll-proportion="-3.75" vertical-offset="480" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -55,8 +56,16 @@
       <file leaf-file-name="webcam.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/modules/webcam.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1980">
-              <folding />
+            <state line="32" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1110">
+              <folding>
+                <element signature="e#1068#1615#0" expanded="false" />
+                <element signature="e#1707#1999#0" expanded="false" />
+                <element signature="e#2034#2238#0" expanded="false" />
+                <element signature="e#2291#2377#0" expanded="false" />
+                <element signature="e#2637#2745#0" expanded="false" />
+                <element signature="e#2869#2932#0" expanded="false" />
+                <element signature="e#3166#3666#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +101,8 @@
         <option value="$PROJECT_DIR$/public/js/app/app.js" />
         <option value="$PROJECT_DIR$/public/js/app/services.js" />
         <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
-        <option value="$PROJECT_DIR$/public/partials/snapshot.html" />
         <option value="$PROJECT_DIR$/public/js/modules/webcam.js" />
+        <option value="$PROJECT_DIR$/public/partials/snapshot.html" />
         <option value="$PROJECT_DIR$/public/js/app/directives.js" />
       </list>
     </option>
@@ -410,7 +419,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32683983" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33766234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33766234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -493,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="28" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="42" selection-start="281" selection-end="281" vertical-scroll-proportion="0.4379562" vertical-offset="0" max-vertical-offset="495">
@@ -534,23 +536,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
+    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="26" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1155">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/modules/webcam.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1980">
+        <state line="32" column="18" selection-start="735" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="411" selection-end="411" vertical-scroll-proportion="0.5905512" vertical-offset="0" max-vertical-offset="765">
+        <state line="38" column="81" selection-start="2122" selection-end="2122" vertical-scroll-proportion="-3.75" vertical-offset="480" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/webcam.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1110">
+          <folding>
+            <element signature="e#1068#1615#0" expanded="false" />
+            <element signature="e#1707#1999#0" expanded="false" />
+            <element signature="e#2034#2238#0" expanded="false" />
+            <element signature="e#2291#2377#0" expanded="false" />
+            <element signature="e#2637#2745#0" expanded="false" />
+            <element signature="e#2869#2932#0" expanded="false" />
+            <element signature="e#3166#3666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="0.93317974" vertical-offset="0" max-vertical-offset="1245">
           <folding />
         </state>
       </provider>
