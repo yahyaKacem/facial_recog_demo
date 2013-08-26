@@ -16,7 +16,7 @@ app.directive("webcamCanvas", function () {
 	return {
 		restrict: "A",
 		scope: {
-			onWebcamStreaming: '&'
+			canvasToVideoDimensions: '&'
 		},
 		link: function ($scope, $element) {
 			var _video = null,
