@@ -38,5 +38,5 @@
 		<img src="../img/ajax-loader.gif" ng-show="loading">
 		<button ng-disabled="!user.$valid" class="btn btn-large btn-primary" ng-click="makeSnapshot(user)">Take picture!</button>
 	</form>
-	<canvas id="snapshot" ng-hide="true"></canvas>
+	<canvas id="snapshot" ng-hide="true" webcam-canvas></canvas>
 </div>
