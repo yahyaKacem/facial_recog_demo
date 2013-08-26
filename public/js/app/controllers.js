@@ -15,8 +15,6 @@ function SnapshotCtrl($scope, $location, localImageSaveService, apiRequestFactor
 	$scope.firstname = formFactory.firstname;
 	$scope.lastname = formFactory.lastname;
 
-	$scope.patOpts = {x: 0, y: 0, w: 25, h: 25};
-
 	/**
 	 * Webcam error
 	 * @param err
@@ -31,26 +29,10 @@ function SnapshotCtrl($scope, $location, localImageSaveService, apiRequestFactor
 
 	/**
 	 * Webcam success
-	 * @param videoElem
 	 */
-	$scope.onSuccess = function (videoElem) {
+	$scope.onSuccess = function () {
 		$scope.showWebCamContainer = true;
-		// The video element contains the captured camera data
-		_video = videoElem;
-		$scope.$apply(function () {
-			$scope.patOpts.w = _video.width;
-			$scope.patOpts.h = _video.height;
-			$scope.showDemos = true;
-		});
-	};
-
-	/**
-	 * Do something manually with stream
-	 * @param stream
-	 * @param videoElem
-	 */
-	$scope.onStream = function (stream, videoElem) {
-		// You could do something manually with the stream.
+		$scope.showDemos = true;
 	};
 
 	/**

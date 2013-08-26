@@ -13,7 +13,8 @@
     <orderEntry type="library" name="jQuery" level="project" />
     <orderEntry type="library" name="lodash.js" level="project" />
     <orderEntry type="library" name="angular.js" level="project" />
-    <orderEntry type="library" name="angular webcam directive" level="project" />
+    <orderEntry type="library" name="angular testing mods" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-stdlib" level="application" />
   </component>
 </module>
 
