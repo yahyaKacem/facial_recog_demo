@@ -5,38 +5,36 @@
 <div class="demos ng-scope" ng-show="showDemos" style="">
 	<span>Look straight into the camera like Barak Obama's picture.</span>
 	<br>
-	<img src="../img/barak.png" style="max-width: none;">
+	<img src="../images/barak.png" style="max-width: none;">
 	<br>
 	<webcam on-stream="onStream(stream,video)"
 	        on-access-denied="onError(err)"
 	        on-streaming="onSuccess(video)"
-	        placeholder="'../img/ajax-loader.gif'">
+	        placeholder="'../images/ajax-loader.gif'">
+		<webcam-canvas></webcam-canvas>
 	</webcam>
 	<br>
-	<span>Enter a name to associate with your picture.</span>
+	<h2>Enter a name to associate with your picture.</h2>
 	<br>
-	<form name="user" novalidate>
-		<div class="control-group" ng-class="{error: user.firstname.$invalid}">
-			<div class="controls">
-				<input type="text" name="firstname" ng-model="firstname" placeholder="Type first name…" required ng-pattern="/^[A-Z][A-Za-z]*$/" ng-trim="true" value="{{ firstname }}">
-				<br>
-				<span class="help-inline" ng-show="user.firstname.$error.required">First name required</span>
+	<form name="user" novalidate role="form" class="form-horizontal">
+		<div class="form-group" ng-class="{error: user.firstname.$invalid}">
+			<div class="col-lg-4">
+				<input class="form-control" type="text" name="firstname" ng-model="firstname" placeholder="Type first name…" required ng-pattern="/^[A-Z][A-Za-z]*$/" ng-trim="true" value="{{ firstname }}">
+				<span class="has-error help-block" ng-show="user.firstname.$error.required">First name required</span>
 				<br ng-show="user.firstname.$error.pattern && user.firstname.$error.required && user.firstname.$dirty">
-				<span class="help-inline" ng-show="user.firstname.$error.pattern && user.firstname.$dirty">First name must start with a capitol letter and only include characters A-Z / a-z</span>
+				<span class="has-error help-block" ng-show="user.firstname.$error.pattern && user.firstname.$dirty">First name must start with a capitol letter and only include characters A-Z / a-z</span>
 			</div>
 		</div>
 
-		<div class="control-group" ng-class="{error: user.lastname.$invalid}">
-			<div class="controls">
-				<input type="text" name="lastname" ng-model="lastname" placeholder="Type last name…" required ng-pattern="/^[A-Z][A-Za-z]*$/" ng-trim="true" value="{{ lastname }}">
-				<br>
-				<span class="help-inline" ng-show="user.lastname.$error.required">Last name is required</span>
+		<div class="form-group" ng-class="{error: user.lastname.$invalid}">
+			<div class="col-lg-4">
+				<input class="form-control" type="text" name="lastname" ng-model="lastname" placeholder="Type last name…" required ng-pattern="/^[A-Z][A-Za-z]*$/" ng-trim="true" value="{{ lastname }}">
+				<span class="has-error help-block" ng-show="user.lastname.$error.required">Last name is required</span>
 				<br ng-show="user.lastname.$error.pattern && user.lastname.$error.required && user.lastname.$dirty">
-				<span class="help-inline" ng-show="user.lastname.$error.pattern && user.lastname.$dirty">Last name must start with a capitol letter and only include characters A-Z / a-z</span>
+				<span class="has-error help-block" ng-show="user.lastname.$error.pattern && user.lastname.$dirty">Last name must start with a capitol letter and only include characters A-Z / a-z</span>
 			</div>
 		</div>
-		<img src="../img/ajax-loader.gif" ng-show="loading">
+		<img src="../stylesheets/images/ajax-loader.gif" ng-show="loading">
 		<button ng-disabled="!user.$valid" class="btn btn-large btn-primary" ng-click="makeSnapshot(user)">Take picture!</button>
 	</form>
-	<webcam-canvas canvas-to-video-dimensions="onSuccess()"></webcam-canvas>
 </div>

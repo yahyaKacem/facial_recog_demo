@@ -2,8 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/jsdoc-conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/lib/angular-1.0.6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/lib/angular-1.1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/angular-ui-router.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/angular-ui-router.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/$templateFactory.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/$urlMatcherFactory.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/UrlMatcher.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/global.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/scripts/prettify/Apache-License-2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/scripts/prettify/lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/scripts/prettify/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/styles/jsdoc-default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/styles/prettify-jsdoc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/release/doc/styles/prettify-tomorrow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/contacts.detail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/contacts.detail.item.edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/contacts.detail.item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/contacts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/contacts.list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/sample/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/compat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/state.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/templateFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/urlMatcherFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/urlRouter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/src/viewDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/compat/matchers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/compat/routeParamsSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/compat/routeSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/lib/angular-mocks-1.0.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/lib/angular-mocks-1.1.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/stateSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/templateFactorySpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/test-config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/testUtils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/urlMatcherFactorySpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/urlRouterSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/test/viewDirectiveSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/docco.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/images/underscore.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/aller-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/aller-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/aller-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/aller-light.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/aller-light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/aller-light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/novecento-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/novecento-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/fonts/novecento-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/public/stylesheets/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/docs/underscore.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/arrays.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/chaining.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/collections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/objects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/speed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/vendor/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/vendor/jslitmus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/test/vendor/runner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/angular/.bower.json" afterPath="$PROJECT_DIR$/public/js/bower/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/jquery/.bower.json" afterPath="$PROJECT_DIR$/public/js/bower/jquery/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/.bower.json" afterPath="$PROJECT_DIR$/public/js/bower/restangular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/README.md" afterPath="$PROJECT_DIR$/public/js/bower/restangular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/angular/angular.js" afterPath="$PROJECT_DIR$/public/js/bower/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/angular/angular.min.js" afterPath="$PROJECT_DIR$/public/js/bower/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/app.js" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/angular/bower.json" afterPath="$PROJECT_DIR$/public/js/bower/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/bower.json" afterPath="$PROJECT_DIR$/public/js/bower/restangular/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/directives.js" afterPath="$PROJECT_DIR$/public/js/app/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/facial_recog_demo.iml" afterPath="$PROJECT_DIR$/.idea/facial_recog_demo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/package.json" afterPath="$PROJECT_DIR$/public/js/bower/restangular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/dist/restangular.js" afterPath="$PROJECT_DIR$/public/js/bower/restangular/dist/restangular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/src/restangular.js" afterPath="$PROJECT_DIR$/public/js/bower/restangular/src/restangular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/dist/restangular.min.js" afterPath="$PROJECT_DIR$/public/js/bower/restangular/dist/restangular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bower/restangular/test/restangularSpec.js" afterPath="$PROJECT_DIR$/public/js/bower/restangular/test/restangularSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/snapshot.html" afterPath="$PROJECT_DIR$/public/partials/snapshot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/modules/webcam.js" afterPath="$PROJECT_DIR$/public/js/modules/webcam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="facial_recog_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,10 +139,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
+      <file leaf-file-name="snapshot.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="0.93317974" vertical-offset="0" max-vertical-offset="1245">
+            <state line="24" column="51" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-11.416667" vertical-offset="86" max-vertical-offset="735">
               <folding />
             </state>
           </provider>
@@ -38,34 +151,35 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="18" selection-start="735" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1785">
+            <state line="48" column="46" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1770">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="snapshot.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
+      <file leaf-file-name="bower.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="81" selection-start="2122" selection-end="2122" vertical-scroll-proportion="-3.75" vertical-offset="480" max-vertical-offset="765">
+            <state line="10" column="28" selection-start="200" selection-end="200" vertical-scroll-proportion="0.24232633" vertical-offset="0" max-vertical-offset="619">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webcam.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/modules/webcam.js">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1110">
-              <folding>
-                <element signature="e#1068#1615#0" expanded="false" />
-                <element signature="e#1707#1999#0" expanded="false" />
-                <element signature="e#2034#2238#0" expanded="false" />
-                <element signature="e#2291#2377#0" expanded="false" />
-                <element signature="e#2637#2745#0" expanded="false" />
-                <element signature="e#2869#2932#0" expanded="false" />
-                <element signature="e#3166#3666#0" expanded="false" />
-              </folding>
+            <state line="3" column="50" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="40" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,29 +202,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/public/partials/recognize.html" />
-        <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/routes/camera.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/config.rb" />
+        <option value="$PROJECT_DIR$/public/js/app/directives.js" />
+        <option value="$PROJECT_DIR$/public/sass/partials/_base.sass" />
+        <option value="$PROJECT_DIR$/public/config.rb" />
+        <option value="$PROJECT_DIR$/public/sass/screen.sass" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/partials/add.html" />
+        <option value="$PROJECT_DIR$/config.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/private/sass/bootstrap/bootstrap.scss" />
+        <option value="$PROJECT_DIR$/private/sass/partials/_custom.sass" />
+        <option value="$PROJECT_DIR$/public/partials/snapshot.html" />
+        <option value="$PROJECT_DIR$/private/sass/screen.sass" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/js/app/app.js" />
-        <option value="$PROJECT_DIR$/public/js/app/services.js" />
-        <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
-        <option value="$PROJECT_DIR$/public/js/modules/webcam.js" />
-        <option value="$PROJECT_DIR$/public/partials/snapshot.html" />
-        <option value="$PROJECT_DIR$/public/js/app/directives.js" />
+        <option value="$PROJECT_DIR$/bower.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1024" />
-    <option name="height" value="580" />
+    <option name="x" value="1502" />
+    <option name="y" value="39" />
+    <option name="width" value="1794" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -138,7 +253,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,28 +316,6 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -243,62 +335,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="camera-images" />
+              <option name="myItemId" value="bower" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="88" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="100" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="128" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/templates/codecanyon-1401391-interactive-3d-cggallery-html5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config.rb" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="104" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="897" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="797" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="897" />
+    <property name="JavaScriptPreferStrict" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="134" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="130" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -310,7 +369,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
+    <property name="options.lastSelected" value="settings" />
+    <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
@@ -328,12 +388,28 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/private/sass" />
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public/partials" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/private" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/stylesheets/images" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -342,14 +418,6 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
@@ -406,27 +474,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1024" height="580" extended-state="6" />
+    <frame x="1502" y="39" width="1794" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34867075" sideWeight="0.66233766" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23283753" sideWeight="0.73817384" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32683983" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33766234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2618262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281471" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -444,11 +513,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/bower/angular/angular.js</url>
-          <line>9206</line>
+          <line>9393</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/bower/angular/angular.js</url>
-          <line>9196</line>
+          <line>9383</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -456,118 +525,67 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/bower/restangular/package.json">
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="446" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="78" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/bower/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8523" column="0" selection-start="270987" selection-end="270987" vertical-scroll-proportion="0.0" vertical-offset="127562" max-vertical-offset="212550">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/camera.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="63" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="628" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="281" selection-end="281" vertical-scroll-proportion="0.4379562" vertical-offset="0" max-vertical-offset="495">
+        <state line="12" column="16" selection-start="290" selection-end="290" vertical-scroll-proportion="0.090202175" vertical-offset="122" max-vertical-offset="765">
           <folding>
-            <element signature="e#281#1043#0" expanded="false" />
-            <element signature="e#1317#2344#0" expanded="false" />
-            <element signature="e#2394#2428#0" expanded="false" />
-            <element signature="e#2477#2510#0" expanded="false" />
-            <element signature="e#2553#2620#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="485" selection-end="485" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="21" selection-start="535" selection-end="535" vertical-scroll-proportion="0.036585364" vertical-offset="210" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="2" selection-start="254" selection-end="254" vertical-scroll-proportion="0.38018432" vertical-offset="0" max-vertical-offset="434">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="18" selection-start="735" selection-end="744" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="81" selection-start="2122" selection-end="2122" vertical-scroll-proportion="-3.75" vertical-offset="480" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/modules/webcam.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="8" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1110">
-          <folding>
-            <element signature="e#1068#1615#0" expanded="false" />
-            <element signature="e#1707#1999#0" expanded="false" />
-            <element signature="e#2034#2238#0" expanded="false" />
-            <element signature="e#2291#2377#0" expanded="false" />
-            <element signature="e#2637#2745#0" expanded="false" />
-            <element signature="e#2869#2932#0" expanded="false" />
-            <element signature="e#3166#3666#0" expanded="false" />
+            <marker date="1378229839000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="24" selection-start="600" selection-end="600" vertical-scroll-proportion="0.93317974" vertical-offset="0" max-vertical-offset="1245">
+        <state line="33" column="0" selection-start="806" selection-end="806" vertical-scroll-proportion="0.2799378" vertical-offset="315" max-vertical-offset="1305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="39" selection-start="729" selection-end="729" vertical-scroll-proportion="0.38772213" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4899" column="0" selection-start="118554" selection-end="118554" vertical-scroll-proportion="0.90979785" vertical-offset="73470" max-vertical-offset="80610">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="46" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="51" selection-start="1240" selection-end="1240" vertical-scroll-proportion="-11.416667" vertical-offset="86" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="50" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="200" selection-end="200" vertical-scroll-proportion="0.24232633" vertical-offset="0" max-vertical-offset="619">
           <folding />
         </state>
       </provider>

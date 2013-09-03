@@ -15,7 +15,7 @@
 })();
 
 angular.module('webcam', [])
-  .directive('webcam', function () {
+  .directive('webcam', function ($timeout) {
     return {
       template:
         '<div class="webcam" ng-transclude>' +
@@ -24,6 +24,9 @@ angular.module('webcam', [])
       restrict: 'E',
       replace: true,
       transclude: true,
+	    controller: function($scope) {
+	      return $scope;
+	    },
       scope:
       {
         onError: '&',

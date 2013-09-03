@@ -1,7 +1,7 @@
 'use strict';
 
 /* Directives */
-var app = angular.module('myApp.directives', []);
+var app = angular.module('myApp.directives', ['webcam']);
 
 app.directive("prettyPrint", function () {
 	return {
@@ -12,54 +12,37 @@ app.directive("prettyPrint", function () {
 	};
 });
 
-app.directive("webcamCanvas", function () {
+app.directive("webcamCanvas", function ($timeout) {
 	return {
-		template:
-			'<div class="webcamcanvas" ng-transclude>' +
+		require:'^webcam',
+		template: '<div class="webcamcanvas" ng-transclude>' +
 			'<canvas id="snapshot" ng-hide="true"></canvas>' +
 			'</div>',
 		restrict: 'E',
 		replace: true,
 		transclude: true,
-		scope: {
-			canvasToVideoDimensions: '&'
-		},
-		link: function ($scope, $element) {
+		link: function ($scope, $element, $attrs, $webcam) {
 			var _video = null,
 				patData = null,
 				patOpts = {x: 0, y: 0, w: 25, h: 25};
 
-			/**
-			 * Creates canvas el
-			 * @param videoElem
-			 */
-			var canvasToVideoDimensions = function (videoElem) {
-				// The video element contains the captured camera data
-				_video = videoElem;
-				patOpts.w = _video.width;
-				patOpts.h = _video.height;
+			var canvasElem = $element.find('canvas')[0];
+
+			$webcam.onStream = function(opts) {
+				$timeout(function(){
+					_video = opts.video;
+
+					$scope.$apply(function(){
+						patOpts.w = _video.width;
+						patOpts.h = _video.height;
+					});
+				}, 500);
 			};
 
-			/**
-			 * Video data used to create canvas element
-			 * @param x
-			 * @param y
-			 * @param w
-			 * @param h
-			 * @returns {ImageData}
-			 */
-			var getVideoData = function getVideoData(x, y, w, h) {
-				$element.width = _video.width;
-				$element.height = _video.height;
-				var ctx = $element.getContext('2d');
-				ctx.drawImage(_video, 0, 0, _video.width, _video.height);
-				return ctx.getImageData(x, y, w, h);
-			};
-
-			$scope.makeSnapShot = function () {
+			$scope.makeSnapShot = function() {
 				// The video element contains the captured camera data
 				if (_video) {
-					var patCanvas = document.querySelector('#snapshot');
+					var patCanvas = canvasElem;
 					if (!patCanvas) return;
 
 					patCanvas.width = _video.width;
@@ -72,7 +55,28 @@ app.directive("webcamCanvas", function () {
 					patData = idata;
 				}
 
+				/* Call custom callback */
+				if ($scope.onWebcamStream) {
+					$scope.onWebcamStream({canvas: canvasElem});
+				}
 			}
+
+			/**
+			 * Video data used to create canvas element
+			 * @param x
+			 * @param y
+			 * @param w
+			 * @param h
+			 * @returns {ImageData}
+			 */
+			var getVideoData = function getVideoData(x, y, w, h) {
+				var patCanvas = document.querySelector('#snapshot');
+				$('#snapshot').width = _video.width;
+				$('#snapshot').height = _video.height;
+				var ctx = $('#snapshot').getContext('2d');
+				ctx.drawImage(_video, 0, 0, _video.width, _video.height);
+				return ctx.getImageData(x, y, w, h);
+			};
 		}
 	}
 });
