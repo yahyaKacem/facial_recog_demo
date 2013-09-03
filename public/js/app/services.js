@@ -18,19 +18,18 @@ app.service('localImageSaveService', function ($http, $location, $q) {
 				method: 'POST',
 				url: url,
 				data: $.param({ image: dataURL }),
-				//params: "image=" + dataURL,
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			};
 
 			var deferred = $q.defer();
 
 			$http(config).
-				success(function (data, status, headers, config) {
+				success(function (data) {
 					deferred.resolve(data);
 					// this callback will be called asynchronously
 					// when the response is available
 				}).
-				error(function (data, status, headers, config) {
+				error(function () {
 					deferred.reject();
 					// called asynchronously if an error occurs
 					// or server returns response with an error status.

@@ -11,7 +11,7 @@
 	        on-access-denied="onError(err)"
 	        on-streaming="onSuccess(video)"
 	        placeholder="'../img/ajax-loader.gif'">
-		<webcam-canvas canvas-to-video-dimensions="onSuccess()"></webcam-canvas>
+		<webcam-canvas />
 	</webcam>
 	<br>
 	<span>Enter a name to associate with your picture.</span>
@@ -37,6 +37,6 @@
 			</div>
 		</div>
 		<img src="../img/ajax-loader.gif" ng-show="loading">
-		<button ng-disabled="!user.$valid" class="btn btn-large btn-primary" ng-click="makeSnapshot(user)">Take picture!</button>
+		<button ng-disabled="!user.$valid" class="btn btn-large btn-primary">Take picture!</button>
 	</form>
 </div>

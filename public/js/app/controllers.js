@@ -3,10 +3,7 @@
 /* Controllers */
 
 function SnapshotCtrl($scope, $location, localImageSaveService, apiRequestFactory, formFactory) {
-	// completely and totally ripped off from http://jonashartmann.github.io/webcam-directive demo
-	var _video = null,
-		patData = null,
-		port = _.indexOf($location.host, 'localhost') ? ':' + $location.port() : '';
+	var port = _.indexOf($location.host, 'localhost') ? ':' + $location.port() : '';
 
 	$scope.showDemos = false;
 	$scope.showSnapShot = false;
@@ -35,24 +32,8 @@ function SnapshotCtrl($scope, $location, localImageSaveService, apiRequestFactor
 		$scope.showDemos = true;
 	};
 
-	/**
-	 * Make a snapshot of the camera data and show it in another canvas.
-	 * @param user
-	 */
-	$scope.makeSnapshot = function makeSnapshot(user) {
-		if (_video) {
-			var patCanvas = document.querySelector('#snapshot');
-			if (!patCanvas) return;
-
-			patCanvas.width = _video.width;
-			patCanvas.height = _video.height;
-			var ctxPat = patCanvas.getContext('2d');
-
-			var idata = getVideoData($scope.patOpts.x, $scope.patOpts.y, $scope.patOpts.w, $scope.patOpts.h);
-			ctxPat.putImageData(idata, 0, 0);
-
-			patData = idata;
-			if (user.$valid) {
+	this.makeSnapshot = function (canvas) {
+			if ($scope.user.$valid) {
 				var name = $scope.user.firstname.$modelValue.toLowerCase() + '_' + $scope.user.lastname.$modelValue.toLowerCase();
 
 				// add first and last name form values to form factory to persist
@@ -63,27 +44,10 @@ function SnapshotCtrl($scope, $location, localImageSaveService, apiRequestFactor
 				apiRequestFactory.request.name = name;
 				apiRequestFactory.request.urls = $location.protocol() + '://' + $location.host() + port + '/camera-images/' + name + '.png';
 				$scope.loading = localImageSaveService.loading;
-				localImageSaveService.saveToServer(patCanvas, name).then($location.path('add'));
+				localImageSaveService.saveToServer(canvas, name)
+					.then($location.path('/add'));
 				$scope.showSnapShot = true;
-			}
 		}
-	};
-
-	/**
-	 * Video data used to create canvas element
-	 * @param x
-	 * @param y
-	 * @param w
-	 * @param h
-	 * @returns {ImageData}
-	 */
-	var getVideoData = function getVideoData(x, y, w, h) {
-		var hiddenCanvas = document.createElement('canvas');
-		hiddenCanvas.width = _video.width;
-		hiddenCanvas.height = _video.height;
-		var ctx = hiddenCanvas.getContext('2d');
-		ctx.drawImage(_video, 0, 0, _video.width, _video.height);
-		return ctx.getImageData(x, y, w, h);
 	};
 }
 
