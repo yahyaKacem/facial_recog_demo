@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', ['restangular', 'webcam', 'myApp.filters', 'myApp.services', 'myApp.directives']).
-	config(['$routeProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+	config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
 		delete $httpProvider.defaults.headers.common['X-Requested-With'];
 //		delete $httpProvider.defaults.headers.common['Content-Type'];
 
