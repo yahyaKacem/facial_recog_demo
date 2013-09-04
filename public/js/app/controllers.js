@@ -45,7 +45,10 @@ function SnapshotCtrl($scope, $location, localImageSaveService, apiRequestFactor
 				apiRequestFactory.request.urls = $location.protocol() + '://' + $location.host() + port + '/camera-images/' + name + '.png';
 				$scope.loading = localImageSaveService.loading;
 				localImageSaveService.saveToServer(canvas, name)
-					.then($location.path('/add'));
+					.then(
+					function(){
+						$location.path('add');
+					});
 				$scope.showSnapShot = true;
 		}
 	};
@@ -60,7 +63,11 @@ function AddCtrl($scope, $location, rekognitionService, apiRequestFactory, apiRe
 	$scope.params = params;
 
 	$scope.addImage = function() {
-		rekognitionService.add(params);
+		rekognitionService.add(params)
+			.then(
+			function(){
+				$location.path('add');
+			});
 	}
 
 	/**

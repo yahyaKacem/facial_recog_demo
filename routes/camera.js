@@ -14,9 +14,11 @@ exports.saveImage = function (req, res, next) {
 
 	fs.writeFile("public/camera-images/" + username + ".png", binaryData, "binary", function (err) {
 		if (err) {
-		console.log(err); // writes out file without error, but it's not a valid image
+			console.log(err); // writes out file without error, but it's not a valid image
+			res.send(err);
 		} else {
-			console.log("public/camera-images/" + username + ".png saved")
+			console.log("public/camera-images/" + username + ".png saved");
+			res.send(200);
 		}
 	});
 };

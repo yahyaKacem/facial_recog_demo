@@ -26,13 +26,11 @@ app.service('localImageSaveService', function ($http, $location, $q) {
 			$http(config).
 				success(function (data) {
 					deferred.resolve(data);
-					// this callback will be called asynchronously
-					// when the response is available
+					console.log('Successful localImageSaveService response!', data);
 				}).
-				error(function () {
-					deferred.reject();
-					// called asynchronously if an error occurs
-					// or server returns response with an error status.
+				error(function (data) {
+					deferred.reject(data);
+					console.log('Failed localImageSaveService response.', data);
 				});
 			return deferred.promise;
 		}
@@ -71,15 +69,13 @@ app.service('rekognitionService', function ($http, $q, $location) {
 			var deferred = $q.defer();
 
 			$http(config).
-				success(function (data, status, headers, config) {
+				success(function (data) {
 					deferred.resolve(data);
-					// this callback will be called asynchronously
-					// when the response is available
+					console.log('Successful rekognitionService response!', data);
 				}).
-				error(function (data, status, headers, config) {
+				error(function (data) {
 					deferred.reject();
-					// called asynchronously if an error occurs
-					// or server returns response with an error status.
+					console.log('Failed rekognitionService response.', data);
 				});
 			return deferred.promise;
 		}

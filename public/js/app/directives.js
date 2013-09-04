@@ -5,7 +5,7 @@ var app = angular.module('myApp.directives', ['webcam']);
 
 app.directive("webcamCanvas", function ($timeout) {
 	return {
-		require:['^webcam', '?^ngController', '?^ngModel'],
+		require:['^webcam', '?^ngController'],
 		template: '<div class="webcamcanvas" ng-transclude>' +
 			'<canvas id="snapshot" ng-hide="true"></canvas>' +
 			'</div>',
@@ -28,7 +28,7 @@ app.directive("webcamCanvas", function ($timeout) {
 				}, 500);
 			};
 
-			$(document).on('click', 'button', controllers, function(event){
+			$(document).on('click', 'button', controllers, function(){
 				var patCanvas = document.querySelector('#snapshot');
 				if (!patCanvas) return;
 
