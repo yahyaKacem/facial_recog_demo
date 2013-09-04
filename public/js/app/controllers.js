@@ -185,8 +185,7 @@ function RecognizeResponseCtrl($scope, apiResponseFactory) {
 			match.tag = toTitleCase(match.tag.replace("_"," "));
 		})
 
-		var sorted = _.sortBy(matches, 'score');
-		var name = sorted[0]['tag'];
+		var name = matches[0]['tag'];
 
 		$scope.alert = {status: 'success', message: 'Facial recognition successful! You are ' + name + '.'};
 	} else {
