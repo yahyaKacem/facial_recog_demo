@@ -1,0 +1,7 @@
+<div class="alert alert-block alert-{{ alert.status }}">
+	{{ alert.message }}
+</div>
+<h2>Response from recognition service</h2>
+<pretty-print data=data ><br/></pretty-print>
+<br/>
+<button type="button" class="btn btn-large btn-primary" ng-click="redo()">Try again</button>

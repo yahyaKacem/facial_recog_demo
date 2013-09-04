@@ -2,7 +2,7 @@
 <div class="ng-scope">
 	<span>Click 'allow' button above to give demo access to your camera.</span>
 </div>
-<div class="demos ng-scope" ng-show="showDemos" style="">
+<div class="demos ng-scope" ng-show="showWebcam" style="">
 	<span>Look straight into the camera like Barak Obama's picture.</span>
 	<br>
 	<img src="../img/barak.png" style="max-width: none;">
@@ -37,6 +37,6 @@
 			</div>
 		</div>
 		<img src="../img/ajax-loader.gif" ng-show="loading">
-		<button ng-disabled="!user.$valid" class="btn btn-large btn-primary">Take picture!</button>
+		<button id='snapshot_button' ng-disabled="!user.$valid" class="btn btn-large btn-primary">Take picture!</button>
 	</form>
 </div>

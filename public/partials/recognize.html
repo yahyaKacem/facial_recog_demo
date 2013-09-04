@@ -1,2 +1,9 @@
-<h2>Response from adding image</h2>
-<pretty-print data=data />
+<div class="demos ng-scope" style="">
+	<h2>Review new snapshot.</h2>
+	<br>
+	<img src="{{ snapshot }}">
+	<br>
+	<br>
+	<button type="button" class="btn btn-large" ng-click="redo()">Take again</button>
+	<button type="button" class="btn btn-large btn-primary" ng-click="recognize()">Continue</button>
+</div>

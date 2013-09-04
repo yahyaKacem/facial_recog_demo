@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/partials/add_response.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/partials/new_snapshot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/partials/recognize_response.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/partials/train.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.bower.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.travis.yml" afterPath="" />
@@ -96,10 +100,13 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.map" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/app.js" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/controllers.js" afterPath="$PROJECT_DIR$/public/js/app/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/directives.js" afterPath="$PROJECT_DIR$/public/js/app/directives.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/recognize.html" afterPath="$PROJECT_DIR$/public/partials/recognize.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/services.js" afterPath="$PROJECT_DIR$/public/js/app/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/partials/snapshot.html" afterPath="$PROJECT_DIR$/public/partials/snapshot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="facial_recog_demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,19 +129,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="26" selection-start="336" selection-end="336" vertical-scroll-proportion="0.5756208" vertical-offset="0" max-vertical-offset="1080">
+            <state line="58" column="56" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="975">
+              <folding>
+                <element signature="e#916#1092#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.prettify.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/modules/jquery.prettify.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="28" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="615">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#841#1894#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="185" column="44" selection-start="5086" selection-end="5086" vertical-scroll-proportion="0.53571427" vertical-offset="1815" max-vertical-offset="2340">
+              <folding>
+                <element signature="n#!!block;n#AddResponseCtrl#0" expanded="false" />
+                <element signature="n#!!block;n#TrainCtrl#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recognize_response.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/recognize_response.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="webcam.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/modules/webcam.js">
+      <file leaf-file-name="new_snapshot.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/new_snapshot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.0" vertical-offset="592" max-vertical-offset="2025">
+            <state line="14" column="11" selection-start="558" selection-end="558" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
@@ -143,34 +185,43 @@
       <file leaf-file-name="snapshot.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="21" selection-start="521" selection-end="521" vertical-scroll-proportion="-3.2916667" vertical-offset="116" max-vertical-offset="735">
+            <state line="39" column="12" selection-start="2074" selection-end="2095" vertical-scroll-proportion="-4.857143" vertical-offset="347" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="54" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="555">
+            <state line="19" column="6" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
+      <file leaf-file-name="add_response.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/add_response.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1365">
+            <state line="9" column="5" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recognize.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/recognize.html">
+      <file leaf-file-name="train.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/train.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+            <state line="7" column="138" selection-start="405" selection-end="405" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/partials/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="6" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
               <folding />
             </state>
           </provider>
@@ -194,27 +245,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/sass/screen.sass" />
-        <option value="$PROJECT_DIR$/config.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/private/sass/bootstrap/bootstrap.scss" />
-        <option value="$PROJECT_DIR$/private/sass/partials/_custom.sass" />
-        <option value="$PROJECT_DIR$/private/sass/screen.sass" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/js/app/app.js" />
-        <option value="$PROJECT_DIR$/public/partials/snapshot.html" />
         <option value="$PROJECT_DIR$/routes/camera.js" />
         <option value="$PROJECT_DIR$/public/js/app/services.js" />
-        <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
+        <option value="$PROJECT_DIR$/public/partials/new_snapshot_response.html" />
         <option value="$PROJECT_DIR$/public/partials/recognize.html" />
+        <option value="$PROJECT_DIR$/public/js/modules/jquery.prettify.js" />
+        <option value="$PROJECT_DIR$/public/partials/train.html" />
+        <option value="$PROJECT_DIR$/public/partials/add_response.html" />
+        <option value="$PROJECT_DIR$/public/js/app/app.js" />
+        <option value="$PROJECT_DIR$/public/partials/snapshot.html" />
+        <option value="$PROJECT_DIR$/public/partials/new_snapshot.html" />
         <option value="$PROJECT_DIR$/public/js/app/directives.js" />
+        <option value="$PROJECT_DIR$/public/partials/recognize_response.html" />
+        <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="1807" />
+    <option name="y" value="171" />
     <option name="width" value="1440" />
     <option name="height" value="829" />
   </component>
@@ -437,10 +489,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/partials" />
       <recent name="$PROJECT_DIR$/private/sass" />
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$/public/img" />
-      <recent name="$PROJECT_DIR$/public/partials" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -523,7 +575,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="829" extended-state="6" />
+    <frame x="1807" y="171" width="1440" height="829" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -534,7 +586,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29555237" sideWeight="0.66431594" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32608697" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33568406" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33568406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -597,52 +649,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <folding>
-            <marker date="1378233294000" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;facial_recog_demo&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/print.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="290" selection-end="290" vertical-scroll-proportion="0.090202175" vertical-offset="122" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4899" column="0" selection-start="118554" selection-end="118554" vertical-scroll-proportion="0.90979785" vertical-offset="73470" max-vertical-offset="80610">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <folding>
-            <marker date="1378233294000" expanded="true" signature="-1:-1" placeholder="{&quot;name&quot;: &quot;facial_recog_demo&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="54" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="555">
@@ -659,37 +665,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="521" selection-end="521" vertical-scroll-proportion="-3.2916667" vertical-offset="116" max-vertical-offset="735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1786" selection-end="1786" vertical-scroll-proportion="0.0" vertical-offset="994" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="93" selection-start="704" selection-end="717" vertical-scroll-proportion="0.25075987" vertical-offset="0" max-vertical-offset="658">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="40" selection-start="165" selection-end="165" vertical-scroll-proportion="0.022796353" vertical-offset="105" max-vertical-offset="855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
@@ -701,17 +679,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1650">
+          <folding>
+            <marker date="1378318197000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/partials/recognize.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
+        <state line="1" column="31" selection-start="68" selection-end="68" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="297" selection-end="297" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/modules/jquery.prettify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="28" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="615">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#841#1894#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/train.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="138" selection-start="405" selection-end="405" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/add_response.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="5" selection-start="397" selection-end="397" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="6" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/snapshot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="12" selection-start="2074" selection-end="2095" vertical-scroll-proportion="-4.857143" vertical-offset="347" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/new_snapshot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="558" selection-end="558" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/directives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="26" selection-start="336" selection-end="336" vertical-scroll-proportion="0.5756208" vertical-offset="0" max-vertical-offset="1080">
+        <state line="58" column="56" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="975">
+          <folding>
+            <element signature="e#916#1092#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/partials/recognize_response.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="213" selection-end="213" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="44" selection-start="5086" selection-end="5086" vertical-scroll-proportion="0.53571427" vertical-offset="1815" max-vertical-offset="2340">
+          <folding>
+            <element signature="n#!!block;n#AddResponseCtrl#0" expanded="false" />
+            <element signature="n#!!block;n#TrainCtrl#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

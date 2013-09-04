@@ -6,7 +6,7 @@ var app = angular.module('myApp.directives', ['webcam']);
 app.directive("prettyPrint", function(){
 	return {
 		template:
-			'<div ng-transclude />',
+			'<div ng-transclude></div>',
 		restrict: 'E',
 		replace: true,
 		transclude: true,
@@ -26,19 +26,18 @@ app.directive("prettyPrint", function(){
 
 app.directive("webcamCanvas", function ($timeout) {
 	return {
-		require:['^webcam', '?^ngController'],
+		require:['^webcam'],
 		template: '<div class="webcamcanvas" ng-transclude>' +
 			'<canvas id="snapshot" ng-hide="true"></canvas>' +
 			'</div>',
 		restrict: 'E',
 		replace: true,
 		transclude: true,
-		link: function ($scope, $element, $attrs, controllers) {
+		link: function ($scope, $element, $attrs, $webcam) {
 			var _video = null,
-				patOpts = {x: 0, y: 0, w: 25, h: 25},
-				$webcam = controllers[0];
+				patOpts = {x: 0, y: 0, w: 25, h: 25};
 
-			$webcam.onStream = function(opts) {
+			$webcam[0].onStream = function(opts) {
 				$timeout(function(){
 					_video = opts.video;
 
@@ -49,7 +48,7 @@ app.directive("webcamCanvas", function ($timeout) {
 				}, 500);
 			};
 
-			$(document).on('click', 'button', controllers, function(){
+			$('#snapshot_button').on('click', function(event){
 				var patCanvas = document.querySelector('#snapshot');
 				if (!patCanvas) return;
 
@@ -60,7 +59,10 @@ app.directive("webcamCanvas", function ($timeout) {
 				var idata = ctxPat.getImageData(patOpts.x, patOpts.y, patOpts.w, patOpts.h);
 				ctxPat.putImageData(idata, 0, 0);
 
-				controllers[1].makeSnapshot(patCanvas);
+				console.log(event.data);
+
+				$element.controller().makeSnapshot(patCanvas);
+				$element.$destroy;
 			})
 		}
 	}

@@ -44,7 +44,7 @@ app.service('localImageSaveService', function ($http, $location, $q) {
  */
 app.service('rekognitionService', function ($http, $q, $location) {
 	return {
-		add: function (params) {
+		get: function (params) {
 			var defaultParams = {
 				api_key: 'ANkv85Gcu8jTcmRn',
 				api_secret: 'Hq7elQKQ7zy7GaHu',
