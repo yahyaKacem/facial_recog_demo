@@ -71,7 +71,6 @@ function AddResponseCtrl($scope, $location, rekognitionService, apiResponseFacto
 		$scope.alert = {status: 'success', message: 'Snapshot has been recognized as being a face!'};
 	} else {
 		$scope.alert = {status: 'error', message: "Snapshot has been not been recognized as being a face. Please go back and try again."};
-		return;
 	}
 
 	// params for rekognition's ::FaceTrain:
@@ -103,7 +102,6 @@ function TrainCtrl($scope, $location, apiResponseFactory) {
 		$scope.alert = {status: 'success', message: 'Facial recognition training successful!'};
 	} else {
 		$scope.alert = {status: 'error', message: "Facial recognition training failed. Please go back and try again."};
-		return;
 	}
 
 	$scope.recognize = function () {
@@ -193,7 +191,6 @@ function RecognizeResponseCtrl($scope, apiResponseFactory) {
 		$scope.alert = {status: 'success', message: 'Facial recognition successful! You are ' + name + '.'};
 	} else {
 		$scope.alert = {status: 'error', message: "Facial recognition failed."};
-		return;
 	}
 
 }
