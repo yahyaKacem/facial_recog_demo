@@ -1,16 +1,15 @@
 {
   "name": "facial_recog_demo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "./app.js",
   "ignore": [
     ".jshintrc",
     "**/*.txt"
   ],
   "dependencies": {
-    "angular": "*",
-    "jquery": "*",
     "lodash": "~1.2.0",
-    "restangular": "*",
-    "underscore": "*"
+    "restangular": "~1.1.2",
+    "jquery": "~2.0.3",
+    "angular": "~1.0.8"
   }
 }

@@ -164,6 +164,13 @@ describe("Restangular", function() {
       $httpBackend.flush();
     });
 
+    it("customPUT should work", function() {
+      $httpBackend.expectPUT('/accounts/hey').respond(accountsModel);
+      restangularAccounts.customPUT({key: 'value'}, 'hey');
+
+      $httpBackend.flush();
+    });
+
     it("options()  should safely return", function() {
       restangularAccounts.options().then(function() {
         expect(true).toBe(true);
@@ -278,6 +285,17 @@ describe("Restangular", function() {
     });
   });
 
+  describe("getRestangularUrl with useCannonicalId set to true", function() {
+    it("should return the generated URL when you chain Restangular methods together", function() {
+      var R = Restangular.withConfig(function(config) {
+        config.setUseCannonicalId(true);
+      });
+      var restangularSpaces = R.one("accounts",123).one("buildings", 456).all("spaces");
+      expect(restangularSpaces.getRestangularUrl()).toEqual("/accounts/123/buildings/456/spaces");
+    });
+  });
+
+
   describe("addElementTransformer", function() {
     it("should allow for a custom method to be placed at the collection level", function() {
       var accountsPromise;
@@ -360,6 +378,16 @@ describe("Restangular", function() {
       Restangular.extendModel('accounts', fn);
 
       expect(spy).toHaveBeenCalledWith('accounts', false, fn);
+    });
+  });
+  
+  describe("defaultHeaders", function() {
+    it("should return defaultHeaders", function() {
+      var defaultHeaders = {testheader:'header value'};
+      
+      Restangular.setDefaultHeaders(defaultHeaders);
+      
+      expect(Restangular.defaultHeaders).toEqual(defaultHeaders);
     });
   });
 });
