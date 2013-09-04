@@ -66,7 +66,7 @@ function AddCtrl($scope, $location, rekognitionService, apiRequestFactory, apiRe
 
 function AddResponseCtrl($scope, $location, rekognitionService, apiResponseFactory) {
 
-	if (_.isPlainObject(apiResponseFactory.response['face_detection'])) {
+	if (apiResponseFactory.response['face_detection'].length > 0) {
 		$scope.data = apiResponseFactory.response;
 		$scope.alert = {status: 'success', message: 'Snapshot has been recognized as being a face!'};
 	} else {
