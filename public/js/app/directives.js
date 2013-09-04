@@ -3,6 +3,27 @@
 /* Directives */
 var app = angular.module('myApp.directives', ['webcam']);
 
+app.directive("prettyPrint", function(){
+	return {
+		template:
+			'<div ng-transclude />',
+		restrict: 'E',
+		replace: true,
+		transclude: true,
+		scope:
+		{
+			data: '&'
+		},
+		link: function postLink($scope, $element) {
+			if ($scope.data()) {
+				$element.prettify({highlight : true}, $scope.data());
+			} else {
+				$element.prettify({highlight : true}, { error: 'no data'});
+			}
+		}
+	};
+});
+
 app.directive("webcamCanvas", function ($timeout) {
 	return {
 		require:['^webcam', '?^ngController'],

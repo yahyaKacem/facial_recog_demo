@@ -65,8 +65,9 @@ function AddCtrl($scope, $location, rekognitionService, apiRequestFactory, apiRe
 	$scope.addImage = function() {
 		rekognitionService.add(params)
 			.then(
-			function(){
-				$location.path('add');
+			function(data){
+				apiResponseFactory.response = data;
+				$location.path('recognize');
 			});
 	}
 
