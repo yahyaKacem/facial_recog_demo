@@ -53,7 +53,7 @@ app.service('rekognitionService', function ($http, $q, $location) {
 			};
 
 			// hard coding image url if running on localhost for testing
-			params.urls = _.indexOf($location.host, 'localhost') ? 'http://farm3.static.flickr.com/2566/3896283279_0209be7a67.jpg' : params.urls;
+//			params.urls = _.indexOf($location.host, 'localhost') ? 'http://farm3.static.flickr.com/2566/3896283279_0209be7a67.jpg' : params.urls;
 
 			_.extend(params, defaultParams);
 
