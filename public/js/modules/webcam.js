@@ -19,7 +19,7 @@ angular.module('webcam', [])
     return {
       template:
         '<div class="webcam" ng-transclude>' +
-          '<video class="webcam-live"></video>' +
+          '<video class="webcam-live img-polaroid"></video>' +
         '</div>',
       restrict: 'E',
       replace: true,
@@ -73,7 +73,7 @@ angular.module('webcam', [])
           var placeholder = document.createElement('img');
           placeholder.class = 'webcam-loader';
           placeholder.src = $scope.placeholder;
-          element.append(placeholder);
+          element.parent().before(placeholder);
         }
 
         var removeLoader = function removeLoader() {

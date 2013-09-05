@@ -44,6 +44,7 @@ app.all('/', function(req, res, next) {
 });
 
 // Routes
+app.get('/camera/delete', camera.deleteImages);
 app.post('/camera/:username', camera.saveImage);
 app.get('/*', routes.index);
 

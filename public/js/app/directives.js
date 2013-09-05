@@ -67,3 +67,23 @@ app.directive("webcamCanvas", function ($timeout) {
 		}
 	}
 });
+
+app.directive("compliantRedirect", function ($location){
+	return {
+		restrict: 'A',
+		link: function () {
+			Modernizr.Detectizr.detect({
+				detectDevice: true,
+				detectBrowser: true
+			});
+
+			var device = Modernizr.Detectizr.device;
+
+			if (device.browser === 'chrome' || device.browser === 'chrome') {
+				return;
+			} else {
+				$location.path('/wrong_browser');
+			}
+		}
+	}
+})

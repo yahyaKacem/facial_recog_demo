@@ -6,11 +6,10 @@ var app = angular.module('myApp.services', []);
 /**
  * Saves canvas image to server
  */
-app.service('localImageSaveService', function ($http, $location, $q) {
-	var loading = true;
+app.service('localImageService', function ($http, $rootScope, $location, $q, promiseTracker) {
 	return {
-		loading: loading,
-		saveToServer: function (canvas, name) {
+		save: function (canvas, name) {
+			$rootScope.savingImage = promiseTracker('saving-image');
 			var dataURL = encodeURIComponent(canvas.toDataURL("image/png"));
 			var url = "/camera/" + name + "/";
 
@@ -18,7 +17,8 @@ app.service('localImageSaveService', function ($http, $location, $q) {
 				method: 'POST',
 				url: url,
 				data: $.param({ image: dataURL }),
-				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+				headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+				tracker: 'saving-image'
 			};
 
 			var deferred = $q.defer();
@@ -33,6 +33,19 @@ app.service('localImageSaveService', function ($http, $location, $q) {
 					console.log('Failed localImageSaveService response.', data);
 				});
 			return deferred.promise;
+		},
+		delete: function() {
+			var deferred = $q.defer();
+			$http({method: 'GET', url: "/camera/delete/"}).
+				success(function (data) {
+					deferred.resolve(data);
+					console.log('Images deleted', data);
+				}).
+				error(function (data) {
+					deferred.reject(data);
+					console.log('Failed to delete images', data);
+				});
+			return deferred.promise;
 		}
 	}
 });
@@ -42,9 +55,10 @@ app.service('localImageSaveService', function ($http, $location, $q) {
  * http://rekognition.com/func/api/?api_key={api_key}&api_secret={api_secret}&jobs={jobs}&urls={urls}
  * API Docs: http://v2.rekognition.com/developer/docs
  */
-app.service('rekognitionService', function ($http, $q, $location) {
+app.service('rekognitionService', function ($http, $q, $rootScope, $location, promiseTracker) {
 	return {
 		get: function (params) {
+			$rootScope.loadingRekog = promiseTracker('loading-rekog');
 			var defaultParams = {
 				api_key: 'ANkv85Gcu8jTcmRn',
 				api_secret: 'Hq7elQKQ7zy7GaHu',
@@ -53,7 +67,9 @@ app.service('rekognitionService', function ($http, $q, $location) {
 			};
 
 			// hard coding image url if running on localhost for testing
-//			params.urls = _.indexOf($location.host, 'localhost') ? 'http://farm3.static.flickr.com/2566/3896283279_0209be7a67.jpg' : params.urls;
+			params.urls = $location.host() == 'localhost'
+				? 'http://farm3.static.flickr.com/2566/3896283279_0209be7a67.jpg'
+				: params.urls;
 
 			_.extend(params, defaultParams);
 
@@ -63,7 +79,8 @@ app.service('rekognitionService', function ($http, $q, $location) {
 				params: params,
 				headers: {
 					'contentType': false
-				}
+				},
+				tracker: 'loading-rekog'
 			};
 
 			var deferred = $q.defer();

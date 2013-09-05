@@ -1,19 +1,19 @@
 'use strict';
 
-// Declare app level module which depends on filters, and services
-angular.module('myApp', ['restangular', 'webcam', 'myApp.filters', 'myApp.services', 'myApp.directives']).
+angular.module('myApp', ['webcam', 'ajoslin.promise-tracker', 'myApp.filters', 'myApp.services', 'myApp.directives']).
 	config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
 		delete $httpProvider.defaults.headers.common['X-Requested-With'];
-//		delete $httpProvider.defaults.headers.common['Content-Type'];
 
 		$routeProvider
-			.when('/', {templateUrl: 'partials/snapshot.html', controller: 'SnapshotCtrl'})
-			.when('/add', {templateUrl: 'partials/add.html', controller: 'AddCtrl'})
-			.when('/add_response', {templateUrl: 'partials/add_response.html', controller: 'AddResponseCtrl'})
-			.when('/train', {templateUrl: 'partials/train.html', controller: 'TrainCtrl'})
+			.when('/', {templateUrl: 'partials/about.html', controller: 'AboutCtrl'})
+			.when('/wrong_browser', {templateUrl: 'partials/wrong_browser.html', controller: 'WrongBrowserCtrl'})
+			.when('/snapshot', {templateUrl: 'partials/snapshot.html', controller: 'SnapshotCtrl'})
+			.when('/add', {templateUrl: 'partials/review.html', controller: 'AddCtrl'})
+			.when('/add_response', {templateUrl: 'partials/response.html', controller: 'AddResponseCtrl'})
+			.when('/train', {templateUrl: 'partials/response.html', controller: 'TrainCtrl'})
 			.when('/new_snapshot', {templateUrl: 'partials/new_snapshot.html', controller: 'NewSnapshotCtrl'})
-			.when('/recognize', {templateUrl: 'partials/recognize.html', controller: 'RecognizeCtrl'})
-			.when('/recognize_response', {templateUrl: 'partials/recognize_response.html', controller: 'RecognizeResponseCtrl'})
+			.when('/recognize', {templateUrl: 'partials/review.html', controller: 'RecognizeCtrl'})
+			.when('/recognize_response', {templateUrl: 'partials/response.html', controller: 'RecognizeResponseCtrl'})
 			.otherwise({redirectTo: '/'});
 
 		$locationProvider.html5Mode(true);

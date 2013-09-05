@@ -1,0 +1,14 @@
+{
+  "name": "detectizr",
+  "homepage": "https://github.com/barisaydinoglu/Detectizr",
+  "_release": "a49646dfca",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a49646dfca7a857d8dc4ce57a7dc4c31acb80a49"
+  },
+  "_source": "git://github.com/barisaydinoglu/Detectizr.git",
+  "_target": "*",
+  "_originalSource": "detectizr",
+  "_direct": true
+}
