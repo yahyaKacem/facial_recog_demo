@@ -12,6 +12,7 @@
     "angular": "~1.0.8",
     "angular-promise-tracker": "~1.3.3",
     "modernizr": "~2.6.2",
-    "detectizr": "*"
+    "detectizr": "*",
+    "angularytics": "~0.2.2"
   }
 }

@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('myApp', ['webcam', 'ajoslin.promise-tracker', 'myApp.filters', 'myApp.services', 'myApp.directives']).
-	config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
+angular.module('myApp', ['webcam', 'angularytics', 'ajoslin.promise-tracker', 'myApp.filters', 'myApp.services', 'myApp.directives']).
+	config(['$routeProvider', '$locationProvider', '$httpProvider', 'AngularyticsProvider', function ($routeProvider, $locationProvider, $httpProvider, AngularyticsProvider) {
+		AngularyticsProvider.setEventHandlers(['Console', 'Google']);
 		delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 		$routeProvider
@@ -17,4 +18,7 @@ angular.module('myApp', ['webcam', 'ajoslin.promise-tracker', 'myApp.filters', '
 			.otherwise({redirectTo: '/'});
 
 		$locationProvider.html5Mode(true);
-	}]);
+	}]).
+	run(function(Angularytics) {
+		Angularytics.init();
+	});;
