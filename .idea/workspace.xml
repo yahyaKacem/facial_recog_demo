@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/camera-images/localhost_test.png" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/test.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.bower.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.gitignore" afterPath="" />
@@ -119,6 +120,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.map" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/app.js" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="facial_recog_demo.iws" />
@@ -154,7 +156,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="2" selection-start="3154" selection-end="3588" vertical-scroll-proportion="0.6052632" vertical-offset="647" max-vertical-offset="1170">
+            <state line="9" column="21" selection-start="413" selection-end="413" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -219,7 +221,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="22" column="24" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -255,9 +257,9 @@
         <option value="$PROJECT_DIR$/public/js/app/directives.js" />
         <option value="$PROJECT_DIR$/public/js/app/services.js" />
         <option value="$PROJECT_DIR$/public/partials/about.html" />
-        <option value="$PROJECT_DIR$/public/js/app/app.js" />
         <option value="$PROJECT_DIR$/public/js/app/controllers.js" />
         <option value="$PROJECT_DIR$/public/partials/response.html" />
+        <option value="$PROJECT_DIR$/public/js/app/app.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
       </list>
     </option>
@@ -366,47 +368,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facial_recog_demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
+              <option name="myItemId" value="camera-images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="197" column="41" selection-start="5498" selection-end="5498" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="795">
@@ -736,9 +691,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="24" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="2" selection-start="3154" selection-end="3588" vertical-scroll-proportion="0.6052632" vertical-offset="647" max-vertical-offset="1170">
+        <state line="9" column="21" selection-start="413" selection-end="413" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>

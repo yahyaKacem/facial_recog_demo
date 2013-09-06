@@ -21,4 +21,4 @@ angular.module('myApp', ['webcam', 'angularytics', 'ajoslin.promise-tracker', 'm
 	}]).
 	run(function(Angularytics) {
 		Angularytics.init();
-	});;
+	});
