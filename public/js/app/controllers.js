@@ -178,6 +178,7 @@ function RecognizeCtrl($scope, $location, apiRequestFactory, apiResponseFactory,
 
 function RecognizeResponseCtrl($scope, $location, $filter, apiResponseFactory, localImageService) {
 	$scope.service = "Recognize";
+	$scope.showName = true;
 	$scope.icon = {
 		continue: 'picture',
 		return: 'user'
@@ -194,8 +195,8 @@ function RecognizeResponseCtrl($scope, $location, $filter, apiResponseFactory, l
 			match.score = parseFloat(match.score);
 			match.tag = $filter('toTitleCase')(match.tag.replace("_", " "));
 		});
-		$scope.name = matches[0]['tag'];
-		$scope.alert = {status: 'success', message: 'Facial recognition successful! You are ' + $scope.name + '.'};
+		$scope.name = matches[0]['tag'] + '!';
+		$scope.alert = {status: 'success', message: 'Facial recognition successful! You are '};
 	} else {
 		$scope.alert = {status: 'error', message: "Facial recognition failed."};
 	}
