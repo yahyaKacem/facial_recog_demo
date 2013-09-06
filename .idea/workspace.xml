@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce76dc96-b77f-4a42-8b96-b76cfc61adac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/camera-images/localhost_test.png" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/camera-images/test.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.bower.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/angular-ui-router/.gitignore" afterPath="" />
@@ -120,7 +119,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore-min.map" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/bower/underscore/underscore.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/app.js" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="facial_recog_demo.iws" />
@@ -156,7 +154,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="413" selection-end="413" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="1230">
+            <state line="19" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="1230">
               <folding />
             </state>
           </provider>
@@ -700,7 +698,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="413" selection-end="413" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="1230">
+        <state line="19" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="1230">
           <folding />
         </state>
       </provider>
