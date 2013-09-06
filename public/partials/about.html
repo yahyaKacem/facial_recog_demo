@@ -3,7 +3,7 @@
 
 	<div class="media">
 		<a class="pull-left" href="#">
-			<img class="media-object" style="width: 150px; height: 155px;" src="../img/faceRec.png">
+			<img class="media-object img-polaroid" style="wilih: 150px; height: 155px;" src="../img/faceRec.png">
 		</a>
 
 		<div class="media-body">
@@ -13,19 +13,14 @@
 				image of the same person taken again with a Webcam to be recognized as that user. Or another user that has
 				already
 				been created.</p>
-			<div class="center">
-				<a class="btn btn-large btn-primary" href="https://github.com/jewelsjacobs/facial_recog_demo">
-					<i class="icon-github"></i>&nbsp;Source on Github
+				<a href="/snapshot" class="pull-right btn btn-primary btn-large">
+					<i class="icon-arrow-right"></i>&nbsp;Get Started
 				</a>
-				<a href="https://github.com/jewelsjacobs/facial_recog_demo/archive/master.zip" target="_blank"
-				   class="btn btn-large btn-success download">
-					<i class="icon-download-alt icon-large"></i>&nbsp;Download as .ZIP
-				</a>
-			</div>
 		</div>
+		<hr/>
 	</div>
-	<p>What does it do?</p>
-	<ul>
+	<h2>What does it do?</h2>
+	<ol>
 		<li>Takes an image of a user from a Webcam and the user's name from a form.</li>
 		<li>Adds the image to the <a href="http://v2.rekognition.com/">ReKognition</a> cloud with the associated user's name
 			using the
@@ -40,7 +35,15 @@
 				href="http://v2.rekognition.com/developer/docs#facerekognize">Face::Recognize</a> REST API method
 			to match the image with an existing user's name.
 		</li>
-	</ul>
+	</ol>
+	<div class="center text-center">	<a class="btn btn-large btn-info" href="https://github.com/jewelsjacobs/facial_recog_demo">
+		<i class="icon-github"></i>&nbsp;Source on Github
+	</a>
+		<a href="https://github.com/jewelsjacobs/facial_recog_demo/archive/master.zip" target="_blank"
+		   class="btn btn-large btn-success download">
+			<i class="icon-download-alt icon-large"></i>&nbsp;Download as .ZIP
+		</a></div>
+	<div class="img-polaroid" style="padding: 20px; margin-top: 10px;">
 	<h2>Facial Recognition</h2>
 	<hr/>
 	<dl>
@@ -64,33 +67,33 @@
 		</dd>
 	</dl>
 	<h3>Javascript Stack</h3>
-	<strong>Backend</strong>
-	<dl>
-		<dt><a href="http://nodejs.org/">node.js</a></dt>
-		<dt><a href="http://expressjs.com/">express</a></dt>
-	</dl>
-	<strong>Frontend</strong>
-	<dl>
-		<dt><a href="http://angularjs.org/">angular.js</a></dt>
-		<dt><a href="http://getbootstrap.com/2.3.2/">bootstrap 2.3.2</a></dt>
-		<dd>I tried using v3 but couldn't get it to work with the form
-			validation formatting. Plus I'm still trying to get used to the whole <strong>Flat UI</strong> thing.
-		</dd>
-		<dt><a href="http://jquery.com/">jquery</a></dt>
-		<dd>Dependency for a <a
+		<h4 class="text-success">Backend</h4>
+	<ul>
+		<li><a href="http://nodejs.org/">node.js</a></li>
+		<li><a href="http://expressjs.com/">express</a></li>
+		</ul>
+		<h4 class="text-success">Frontend</h4>
+		<ul>
+		<li><a href="http://angularjs.org/">angular.js</a></li>
+		<li><a href="http://getbootstrap.com/2.3.2/">bootstrap 2.3.2</a></li>
+		<ul><li>I tried using v3 but couldn't get it to work with the form
+			validation formatting. Plus I'm still trying to get used to the whole Flat UI thing.
+		</li></ul>
+		<li><a href="http://jquery.com/">jquery</a></li>
+		<ul><li>Dependency for a <a
 				href="https://github.com/jewelsjacobs/jquery.prettify">jquery.prettify</a> angular.js directive I'm using to
 			display and format API responses in browser.
-		</dd>
-	</dl>
-	<strong>Other</strong>
-	<dl>
-		<dt><a href="http://bower.io/">bower</a></dt>
-		<dt><a href="https://github.com/ajoslin/angular-promise-tracker">angular-promise-tracker</a></dt>
-		<dt><a href="http://lodash.com/">lo-dash</a></dt>
-		<dt><a href="http://modernizr.com/">modernizr</a></dt>
-		<dt><a href="http://barisaydinoglu.github.io/Detectizr/">detectizr</a></dt>
-		<dd>I created an angular.js directive to detect if the browser works with WebRTC.</dd>
-	</dl>
+		</li></ul>
+		</ul>
+		<h4 class="text-success">Other</h4>
+		<ul>
+		<li><a href="http://bower.io/">bower</a></li>
+		<li><a href="https://github.com/ajoslin/angular-promise-tracker">angular-promise-tracker</a></li>
+		<li><a href="http://lodash.com/">lo-dash</a></li>
+		<li><a href="http://modernizr.com/">modernizr</a></li>
+		<li><a href="http://barisaydinoglu.github.io/Detectizr/">detectizr</a></li>
+		<ul><li>I created an angular.js directive to detect if the browser works with WebRTC.</li></ul>
+	</ul>
 	<h2>TODO</h2>
 	<hr/>
 	<ul>
@@ -109,10 +112,6 @@
 		<li>Set up with <a href="https://travis-ci.org/">TravisCI</a></li>
 	<li>Look at using <a href="http://phono.com/webrtc">PhonoSDK</a> as a WebRTC polyfill</li>
 	</ul>
-	<p> If anyone wants to branch this and do some of these TODOs you would be my hero!</p>
-	<p>
-		<a href="/snapshot" class="btn btn-primary btn-large">
-			Get Started
-		</a>
-	</p>
+		<p> If anyone wants to branch this and do some of these TODOs you would be my hero!</p>
+	</div>
 </div>
