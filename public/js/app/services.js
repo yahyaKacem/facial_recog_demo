@@ -62,8 +62,8 @@ app.service('rekognitionService', function ($http, $q, $rootScope, $location, pr
 			var defaultParams = {
 				api_key: 'ANkv85Gcu8jTcmRn',
 				api_secret: 'Hq7elQKQ7zy7GaHu',
-				name_space: 'poc',
-				user_id: 'uverse'
+				name_space: 'demo',
+				user_id: 'demo'
 			};
 
 			// hard coding image url if running on localhost for testing
