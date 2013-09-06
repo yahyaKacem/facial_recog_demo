@@ -1,6 +1,7 @@
 'use strict';
 
 /* Controllers */
+function AboutCtrl($scope) {};
 
 function SnapshotCtrl($scope, $location, localImageService, apiRequestFactory, formFactory) {
 	var port = _.indexOf($location.host, 'localhost') ? ':' + $location.port() : '';
@@ -113,12 +114,13 @@ function TrainCtrl($scope, $location, apiResponseFactory) {
 		return: 'Return'
 	};
 	var response = apiResponseFactory.response;
-	if (_.has(response, 'usage') && _.has(response.usage, 'status') && response.usage.status == 'Succeed.'){
+	if (_.has(response, 'usage') && _.has(response.usage, 'status') && response.usage.status == 'Succeed.') {
 		$scope.data = apiResponseFactory.response;
 		$scope.alert = {status: 'success', message: 'Facial recognition training successful!'};
 	} else {
 		$scope.alert = {status: 'error', message: "Facial recognition training failed. Please go back and try again."};
-	};
+	}
+	;
 
 	$scope.continue = function () {
 		$location.path('new_snapshot');
@@ -139,15 +141,15 @@ function NewSnapshotCtrl($scope, $location, localImageService, apiRequestFactory
 	};
 
 	this.makeSnapshot = function (canvas) {
-		var randNum = Math.floor((Math.random()*100)+1);
+		var randNum = Math.floor((Math.random() * 100) + 1);
 		var randImageName = 'recog_image_' + randNum;
 		apiRequestFactory.request.urls = $location.protocol() + '://' + $location.host() + port + '/camera-images/' + randImageName + '.png';
 		localImageService.save(canvas, randImageName)
-				.then(
-				function () {
-					$location.path('recognize');
-				});
-		}
+			.then(
+			function () {
+				$location.path('recognize');
+			});
+	}
 }
 
 function RecognizeCtrl($scope, $location, apiRequestFactory, apiResponseFactory, rekognitionService) {
@@ -185,12 +187,12 @@ function RecognizeResponseCtrl($scope, $location, $filter, apiResponseFactory, l
 		return: 'Create new user'
 	};
 	var response = apiResponseFactory.response;
-	if (_.has(response, 'face_detection') && response['face_detection'].length > 0){
+	if (_.has(response, 'face_detection') && response['face_detection'].length > 0) {
 		$scope.data = response;
 		var matches = $scope.data.face_detection[0]['matches'];
-		_.map(matches, function(match){
+		_.map(matches, function (match) {
 			match.score = parseFloat(match.score);
-			match.tag = $filter('toTitleCase')(match.tag.replace("_"," "));
+			match.tag = $filter('toTitleCase')(match.tag.replace("_", " "));
 		});
 		$scope.name = matches[0]['tag'];
 		$scope.alert = {status: 'success', message: 'Facial recognition successful! You are ' + $scope.name + '.'};

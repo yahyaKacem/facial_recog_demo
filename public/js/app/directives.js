@@ -3,22 +3,20 @@
 /* Directives */
 var app = angular.module('myApp.directives', ['webcam']);
 
-app.directive("prettyPrint", function(){
+app.directive("prettyPrint", function () {
 	return {
-		template:
-			'<div ng-transclude></div>',
+		template: '<div ng-transclude></div>',
 		restrict: 'E',
 		replace: true,
 		transclude: true,
-		scope:
-		{
+		scope: {
 			data: '&'
 		},
 		link: function postLink($scope, $element) {
 			if ($scope.data()) {
-				$element.prettify({highlight : true}, $scope.data());
+				$element.prettify({highlight: true}, $scope.data());
 			} else {
-				$element.prettify({highlight : true}, { error: 'no data'});
+				$element.prettify({highlight: true}, { error: 'no data'});
 			}
 		}
 	};
@@ -26,7 +24,7 @@ app.directive("prettyPrint", function(){
 
 app.directive("webcamCanvas", function ($timeout) {
 	return {
-		require:['^webcam'],
+		require: ['^webcam'],
 		template: '<div class="webcamcanvas" ng-transclude>' +
 			'<canvas id="snapshot" ng-hide="true"></canvas>' +
 			'</div>',
@@ -37,18 +35,18 @@ app.directive("webcamCanvas", function ($timeout) {
 			var _video = null,
 				patOpts = {x: 0, y: 0, w: 25, h: 25};
 
-			$webcam[0].onStream = function(opts) {
-				$timeout(function(){
+			$webcam[0].onStream = function (opts) {
+				$timeout(function () {
 					_video = opts.video;
 
-					$scope.$apply(function(){
+					$scope.$apply(function () {
 						patOpts.w = _video.width;
 						patOpts.h = _video.height;
 					});
 				}, 500);
 			};
 
-			$('#snapshot_button').on('click', function(event){
+			$('#snapshot_button').on('click', function (event) {
 				var patCanvas = document.querySelector('#snapshot');
 				if (!patCanvas) return;
 
@@ -68,7 +66,7 @@ app.directive("webcamCanvas", function ($timeout) {
 	}
 });
 
-app.directive("compliantRedirect", function ($location){
+app.directive("compliantRedirect", function ($location) {
 	return {
 		restrict: 'A',
 		link: function () {
