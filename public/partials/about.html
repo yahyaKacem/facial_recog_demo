@@ -1,6 +1,83 @@
 <div class="hero-unit">
 	<h1>HTML5 Facial Recognition Demo</h1>
-	<p>Tagline</p>
+	<p class="lead">HTML5 Heroku hosted demo which will recognize an image taken from a Webcam, associate it with a user's
+		name and then allow any
+		image of the same person taken again with a Webcam to be recognized as that user. Or another user that has already
+		been created.</p>
+	<h2>Facial Recognition</h2>
+	<hr/>
+	<dl>
+		<dt><a href="http://rekognition.com/">ReKognition API</a></dt>
+		<dd>I created an angular.js service to consume this.</dd>
+	</dl>
+	<h2>HTML5 based technologies</h2>
+	<hr/>
+	<dl>
+	<dt><a href="http://www.webrtc.org/">WebRTC</a></dt>
+	<dd>I tweaked the awesome <a href="http://jonashartmann.github.io/webcam-directive/#/">Webcam angular.js
+		directive</a> from <a href="http://stackoverflow.com/users/1981709/jonas-hartmann">Jonas Hartmann</a></dd>
+	<dt><a href="https://developer.mozilla.org/en-US/docs/HTML/Canvas">Canvas</a></dt>
+	<dd>I created an angular.js directive which is
+		dependant on the Webcam directive to capture Webcam snapshots. Inspiration and some code shamelessly ripped off
+		from
+		the Webcam angular.js directive's <a href="http://jonashartmann.github.io/webcam-directive/#/">Take Snapshot</a>
+		demo
+		<a href="view-source:http://jonashartmann.github.io/webcam-directive/#/">source</a></dd>
+	</dl>
+	<h3>Javascript Stack</h3>
+	<h4>Backend</h4>
+	<dl>
+	<dt><a href="http://nodejs.org/">node.js</a></dt>
+		<dd>&nbsp;</dd>
+	<dt><a href="http://expressjs.com/">express</a></dt>
+		<dd>&nbsp;</dd>
+	</dl>
+	<h4>Frontend</h4>
+	<dl>
+	<dt><a href="http://angularjs.org/">angular.js</a></dt>
+		<dd>&nbsp;</dd>
+	<dt><a href="http://getbootstrap.com/2.3.2/">bootstrap 2.3.2</a></dt>
+	<dd>I tried using v3 but couldn't get it to work with the form
+		validation formatting. Plus I'm still trying to get used to the whole <strong>Flat UI</strong> thing
+	</dd>
+	<dt><a href="http://jquery.com/">jquery</a></dt>
+	<dd>dependency for a <a
+			href="https://github.com/jewelsjacobs/jquery.prettify">jquery.prettify</a> angular.js directive I'm using to
+		display and
+		format API responses in browser
+	</dd>
+	</dl>
+	<h4>Other</h4>
+	<dl>
+	<dt><a href="http://bower.io/">bower</a></dt>
+		<dd>&nbsp;</dd>
+	<dt><a href="https://github.com/ajoslin/angular-promise-tracker">angular-promise-tracker</a></dt>
+		<dd>&nbsp;</dd>
+	<dt><a href="http://lodash.com/">lo-dash</a></dt>
+		<dd>&nbsp;</dd>
+	<dt><a href="http://modernizr.com/">modernizr</a></dt>
+		<dd>&nbsp;</dd>
+	<dt><a href="http://barisaydinoglu.github.io/Detectizr/">detectizr</a></dt>
+	<dd>I created an angular.js directive to detect if the browser works with WebRTC</dd>
+	</dl>
+	<h2>TODO</h2>
+	<hr/>
+	<ul>
+		<li>Integrate services with angular-promise-tracker services injected with front end loading spinners or progress
+			bars
+		</li>
+		<li> Make angular.js modules out of custom services, directives and filters</li>
+		<li> Unit & <a href="http://docs.angularjs.org/guide/dev_guide.e2e-testing">end to end</a> testing with <a
+				href="http://karma-runner.github.io/0.10/index.html">karma</a> + <a
+				href="http://pivotal.github.io/jasmine/">jasmin</a></li>
+		<li> node module testing using <a href="http://vowsjs.org/">vows.js</a></li>
+		<li><a href="http://newtriks.com/2013/06/11/automating-angularjs-with-yeoman-grunt-and-bower/">Automate tests,
+			linting and concatenation / uglifying with Grunt</a></li>
+		<li><a href="">Finish up JSDoc blocks and decent comments</a>
+			API Docs with <a href="https://github.com/visionmedia/dox">dox</a></li>
+		<li>Set up with <a href="https://travis-ci.org/">TravisCI</a></li>
+	</ul>
+	<p>	If anyone wants to branch this and do some of these TODOs you would be my hero!</p>
 	<p>
 		<a href="/snapshot" class="btn btn-primary btn-large">
 			Get Started
